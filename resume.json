@@ -1,6 +1,6 @@
 {
     "meta": {
-        "theme": "Macchiato"
+        "theme": "onepage-plus"
     },
     "basics": {
         "name": "Halil Bozdoğan",
@@ -45,8 +45,8 @@
             "position": "Senior Software Engineer",
             "startDate": "2015-12-31",
             "endDate": "2022-11-30",
-            "highlights": [],
-            "summary": "- Develop and manage large government projects.\n- Design and develop high availability and fault tolerance systems.\n- Make the decisions for tech stack on projects as a technical leader.\n- Code Optimization on large and old code bases.\n- Migrating old .Net Core projects to recent framework versions. Mainly 2.x to newer lts versions\n- Fixing security related bugs.\n- Configuration for CI/CD Operations with TFS and On-Premise Kubernetes\n- Converting Windows Service projects to Docker containers and deploying to Kubernetes clusters",
+            "highlights": ["Kubernets","High Performance","DevOps","High Availability","Leader","Code Optimization","Docker"],
+            "summary": "At Tiga Bilgi Teknolojileri A.Ş., I had the opportunity to develop and manage large government projects. As a technical leader, I made significant decisions regarding the tech stack for these projects. I also specialized in designing and developing high availability and fault tolerance systems. Additionally, I focused on code optimization for large and old code bases, as well as fixing security-related bugs. Another key responsibility was migrating outdated .Net Core projects to newer versions of the framework, specifically from 2.x to the more recent LTS versions. In terms of operations, I worked on configuring CI/CD operations with TFS and On-Premise Kubernetes. Furthermore, I converted Windows Service projects to Docker containers and deployed them to Kubernetes clusters.",
             "url": "https://www.tiga.com.tr",
             "location": "Ankara"
         },
@@ -55,8 +55,8 @@
             "position": "Senior Software Engineer",
             "startDate": "2014-04-30",
             "endDate": "2015-10-31",
-            "highlights": [],
-            "summary": "- Actively participated in analysis, design, and development of projects.\n- Able to obtain security clearance for military projects.\n- Wrote a High-Performance Non-Blocking web server for custom messaging integrations.",
+            "highlights": ["Military Project","Security","High Performance"],
+            "summary": "During my tenure at CLF IT & Management Consulting, I actively participated in the analysis, design, and development of various projects. In addition, I was able to obtain security clearance for military projects. One of my notable accomplishments was creating a High Performance Non-Blocking web server for custom messaging integrations.",
             "url": "https://www.linkedin.com/company/clf-it-&-management-consulting/"
         },
         {
@@ -64,8 +64,8 @@
             "position": "Software Engineer",
             "startDate": "2013-12-31",
             "endDate": "2014-02-28",
-            "highlights": [],
-            "summary": "Developed windows/web services for the agency to third-party connections across the country.",
+            "highlights": ["Integration","Web Services"],
+            "summary": "At Anadolu Agency, I played a vital role in developing windows/web services to facilitate third-party connections across the country. This involved ensuring smooth and reliable communication channels between the agency and external entities.",
             "url": "https://www.linkedin.com/company/anadoluajansi/"
         },
         {
@@ -73,8 +73,8 @@
             "position": "Application Development Consultant",
             "startDate": "2008-09-30",
             "endDate": "2013-12-31",
-            "highlights": [],
-            "summary": "- Requirements analysis for projects.\n- Training interms and junior developers.\n- Architecture and coding of the framework.\n- Developed base libraries used across multiple projects.\n- Optimized old libraries for better performance.\n- Analyzing security reports and fixed insecure codes.",
+            "highlights": ["Training Interns","Code Optimization","High Performance","Security Analysis"],
+            "summary": "In my role as an Application Development Consultant at Innova, my responsibilities included requirements analysis for projects. I also had the opportunity to train interns and junior developers to hone their skills. Moreover, I took part in the architecture and coding of the framework, and I developed base libraries that were utilized across multiple projects. Additionally, I optimized existing libraries to enhance performance and actively addressed security vulnerabilities by analyzing security reports and resolving insecure code.",
             "url": "https://www.linkedin.com/company/innova/",
             "location": "Ankara"
         },
@@ -83,14 +83,9 @@
             "position": "System Support Chief",
             "startDate": "2007-10-31",
             "endDate": "2008-08-31",
-            "summary": "- SharePoint Deployment and Configurations.\n- Writing SharePoint Work flows.\n- Administered Active Directory and various Windows Servers",
+            "highlights": ["SharePoint","Windows Servers","Active Directory","System Support"],
+            "summary": "During my time as a System Support Chief at Demir Export A.Ş., I focused on SharePoint deployment and configurations. I also wrote SharePoint workflows and administered Active Directory along with various Windows Servers. These responsibilities allowed me to gain valuable expertise in system support and administration.",
             "url": "https://www.linkedin.com/company/demir-export-a-/"
-        },
-        {
-            "name": "www.hitoyun.com",
-            "position": "Junior Editor",
-            "startDate": "2001-12-31",
-            "endDate": "2005-12-31"
         }
     ],
     "volunteer": [],
