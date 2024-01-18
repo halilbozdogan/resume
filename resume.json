@@ -236,8 +236,7 @@
             "startDate": "2020-12-31",
             "summary": "This project aimed at gathering patient treatment and visit details from healthcare providers throughout the country, showcasing results on a digital portal. e-Nabiz managed over a million daily requests from healthcare providers, storing over 6 million patient data on a robust NoSQL database. I played a significant role in migrating legacy applications to docker containers and deploying configuration for a Kubernetes ecosystem.",
             "url": "https://www.enabiz.gov.tr",
-            "endDate": "2020-12-31",
-                        "highlights": ["Kubernets","High Performance","DevOps","High Availability","Code Optimization","Docker","Couchbase","NoSQL"]
+            "endDate": "2020-12-31"
         },
         {
             "name": "Ministry of Youth and Sports - E-Transition System",
