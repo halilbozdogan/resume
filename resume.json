@@ -105,62 +105,52 @@
         {
             "name": "MS: Programming in HTML5 with JavaScript and CSS3",
             "issuer": "Microsoft",
-            "startDate": "2015-07-31",
-            "url": "http://www.microsoft.com/learning/en-us/certification-overview.aspx"
+            "startDate": "2015-07-31"
         },
         {
             "name": "MCITP: Enterprise Administrator on Windows Server 2008",
             "issuer": "Microsoft",
-            "startDate": "2008-07-31",
-            "url": "http://www.microsoft.com/learning/en-us/certification-overview.aspx"
+            "startDate": "2008-07-31"
         },
         {
             "name": "MCPD: Enterprise Application Developer 3.5",
             "issuer": "Microsoft",
-            "startDate": "2010-06-30",
-            "url": "http://www.microsoft.com/learning/en-us/certification-overview.aspx"
+            "startDate": "2010-06-30"
         },
         {
             "name": "MCPS: Microsoft Certified Professional",
             "issuer": "Microsoft",
-            "startDate": "2008-03-31",
-            "url": "http://www.microsoft.com/learning/en-us/certification-overview.aspx"
+            "startDate": "2008-03-31"
         },
         {
             "name": "MCTS: Windows Server 2008 Active Directory, Configuration",
             "issuer": "Microsoft",
-            "startDate": "2008-07-31",
-            "url": "http://www.microsoft.com/learning/en-us/certification-overview.aspx"
+            "startDate": "2008-07-31"
         },
         {
             "name": "MCTS: Windows Server 2008 Network Infrastructure, Configuration",
             "issuer": "Microsoft",
-            "startDate": "2008-07-31",
-            "url": "http://www.microsoft.com/learning/en-us/certification-overview.aspx"
+            "startDate": "2008-07-31"
         },
         {
             "name": "MCTS: Windows Server 2008 Applications Infrastructure, Configuration",
             "issuer": "Microsoft",
-            "startDate": "2008-07-31",
-            "url": "http://www.microsoft.com/learning/en-us/certification-overview.aspx"
+            "startDate": "2008-07-31"
         },
         {
             "name": "MCTS: .NET Framework 3.5, Windows Communication Foundation Applications",
             "issuer": "Microsoft",
-            "startDate": "2010-06-30",
-            "url": "http://www.microsoft.com/learning/en-us/certification-overview.aspx"
+            "startDate": "2010-06-30"
         },
         {
             "name": "MCTS: .NET Framework 3.5, ADO.NET Applications",
             "issuer": "Microsoft",
-            "startDate": "2010-05-31",
-            "url": "http://www.microsoft.com/learning/en-us/certification-overview.aspx"
+            "startDate": "2010-05-31"
         },
         {
             "name": "MCTS: .NET Framework 3.5, ASP.NET Applications",
             "issuer": "Microsoft",
-            "startDate": "2010-04-30",
-            "url": "http://www.microsoft.com/learning/en-us/certification-overview.aspx"
+            "startDate": "2010-04-30"
         }
     ],
     "publications": [],
@@ -239,60 +229,60 @@
         },
         {
             "name": "Ministry of Youth and Sports - E-Transition System",
-            "startDate": "2019-04-30",
+            "startDate": "2019-04",
             "summary": "This digital transformation project aimed at digitizing all internal processes, significantly reducing paperwork and enhancing workflow efficiency. Here, I invested my energy into improving legacy code and mentoring junior staff.",
             "url": "https://www.gsb.gov.tr",
-            "endDate": "2019-12-31"
+            "endDate": "2019-12"
         },
         {
             "name": "Turkey Scholarships Application System",
-            "startDate": "2015-12-31",
+            "startDate": "2015-12",
             "summary": "Government-funded project enabled international students to apply and track their scholarship applications efficiently. Utilizing Azure technology, this system catered to over 150 thousand applications in just a month in 2019.",
             "url": "https://tbbs.turkiyeburslari.gov.tr",
-            "endDate": "2016-11-30"
+            "endDate": "2016-11"
         },
         {
             "name": "Internal Company Portal For HR and Finance",
-            "startDate": "2015-01-31",
+            "startDate": "2015-01",
             "summary": "Internal project aimed at streamlining HR and Finance Departments' operations. My prime duties were in identifying workflows, developing security modules, and creating conceptual visual designs of individual modules.",
-            "endDate": "2015-10-31"
+            "endDate": "2015-10"
         },
         {
             "name": "Network Device Monitoring And Management",
-            "startDate": "2014-04-30",
+            "startDate": "2014-04",
             "summary": "This Turkish Armed Forces project, allowed remote monitoring and management of more than 1000 devices. I played a significant role in optimizing old code and guiding resources for new customer requests.",
-            "endDate": "2015-10-31"
+            "endDate": "2015-10"
         },
         {
             "name": "Central Bank of the Republic of Turkey Service Integration",
-            "startDate": "2013-12-31",
+            "startDate": "2013-12",
             "summary": "An integration project between Reuters Marketlink and Anadolu Agency Finance Data Portal AAFinans. The project involved in-depth protocol analysis, version history tracking for messages, and web portal display of announcements.",
             "url": "https://aafinans.com/",
-            "endDate": "2014-02-28"
+            "endDate": "2014-02"
         },
         {
             "name": "Loyalty Framework",
-            "startDate": "2013-08-31",
+            "startDate": "2013-08",
             "summary": " This project involved the development of base framework and components for future projects in Innova Payment and Finance Division.",
-            "endDate": "2013-12-31"
+            "endDate": "2013-12"
         },
         {
             "name": "Turk Telekom Kurumsal Marka - Turk Telekom Corporate Brand",
-            "startDate": "2013-01-31",
+            "startDate": "2013-01",
             "summary": "This project involved creating a loyalty system for enterprise clients partnering with external brands using SMS Services. I focused on integration using .NET Technologies, error analysis, and server requirements.",
-            "endDate": "2013-11-30"
+            "endDate": "2013-11"
         },
         {
             "name": "Bizimle Kazan, Turk Telekom Enterprise Loyalty System",
-            "startDate": "2012-11-30",
+            "startDate": "2012-11",
             "summary": "Loyalty initiative served enterprise customers who opted for bill commitments. I played a crucial role in developing a library to calculate cancellation penalties and securing the system.",
-            "endDate": "2013-01-31"
+            "endDate": "2013-01"
         },
         {
             "name": "TT Nokta – Multimedia Payphone",
-            "startDate": "2009-12-31",
+            "startDate": "2009-12",
             "summary": "This project aimed at developing 100+ multimedia payphones offering internet services, SMS, email, and more. My responsibilities included creating an image-based deployment solution, automatic backup/update/restore solution, and URL control for the Internet Module.",
-            "endDate": "2011-12-31"
+            "endDate": "2011-12"
         }
     ]
 }
