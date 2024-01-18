@@ -46,7 +46,7 @@
             "position": "Senior Software / Devops Engineer",
             "startDate": "2015-12-31",
             "endDate": "2022-11-30",
-            "highlights": ["Kubernets","High Performance","DevOps","High Availability","Leader","Code Optimization","Docker"],
+            "highlights": ["Kubernets","High Performance","DevOps","High Availability","Leader","Code Optimization","Docker","Couchbase","NoSQL"],
             "summary": "At Tiga Bilgi Teknolojileri A.Ş., I had the opportunity to develop and manage large government projects.\r\nAs a technical leader, I made significant decisions regarding the tech stack for these projects. I also specialized in designing and developing high availability and fault tolerance systems.\r\nAdditionally, I focused on code optimization for large and old code bases, as well as fixing security-related bugs. Another key responsibility was migrating outdated .Net Core projects to newer versions of the framework, specifically from 2.x to the more recent LTS versions.\r\nIn terms of operations, I worked on configuring CI/CD operations with TFS and On-Premise Kubernetes. Furthermore, I converted Windows Service projects to Docker containers and deployed them to Kubernetes clusters.",
             "url": "https://www.tiga.com.tr",
             "location": "Ankara"
@@ -180,7 +180,7 @@
                 "High Performance Applications",
                 "High Availability"
             ],
-            "level": "Master",
+            "level": "Senior",
             "name": "Backend"
         },
         {
@@ -194,7 +194,7 @@
                 "Jira",
                 "VMware ESX"
             ],
-            "level": "Master",
+            "level": "Senior",
             "name": "Devops"
         },
         {
@@ -202,17 +202,16 @@
                 "HTML",
                 "Javascript"
             ],
-            "level": "Intermediate",
             "name": "Frontend"
         }
     ],
     "languages": [
         {
-            "fluency": "Professional Working",
+            "fluency": "Fluent",
             "language": "English"
         },
         {
-            "fluency": "Native Speaker",
+            "fluency": "Native",
             "language": "Turkish"
         }
     ],
@@ -237,7 +236,8 @@
             "startDate": "2020-12-31",
             "summary": "This project aimed at gathering patient treatment and visit details from healthcare providers throughout the country, showcasing results on a digital portal. e-Nabiz managed over a million daily requests from healthcare providers, storing over 6 million patient data on a robust NoSQL database. I played a significant role in migrating legacy applications to docker containers and deploying configuration for a Kubernetes ecosystem.",
             "url": "https://www.enabiz.gov.tr",
-            "endDate": "2020-12-31"
+            "endDate": "2020-12-31",
+                        "highlights": ["Kubernets","High Performance","DevOps","High Availability","Code Optimization","Docker","Couchbase","NoSQL"]
         },
         {
             "name": "Ministry of Youth and Sports - E-Transition System",
