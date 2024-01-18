@@ -1,236 +1,304 @@
 {
-  "meta": {
-    "theme": "elegant"
-  },
-  "basics": {
-    "name": "Thomas Davis",
-    "label": "Web Developer",
-    "image": "https://avatars0.githubusercontent.com/u/416209?s=460&u=38f220a2c9c658141804f881c334c594eb1642ac&v=4",
-    "summary": "I'm a full stack web developer who can build apps from the ground up. I've worked mostly at startups so I am used to wearing many hats. I am a very product focussed developer who priotizes user feedback first and foremost. I'm generally very flexible when investigating new roles. ",
-    "website": "https://lordajax.com",
-    "email": "thomasalwyndavis@gmail.com",
-    "location": {
-      "city": "Melbourne",
-      "countryCode": "AU"
+    "meta": {
+        "theme": "elegant"
     },
-    "profiles": [
-      {
-        "username": "ajaxdavis",
-        "url": "https://twitter.com/ajaxdavis",
-        "network": "twitter"
-      },
-      {
-        "url": "https://github.com/thomasdavis",
-        "username": "thomasdavis",
-        "network": "github"
-      }
+    "basics": {
+        "name": "Halil Bozdoğan",
+        "label": "Senior Software / DevOps Engineer",
+        "image": "",
+        "summary": "I am an experienced Senior Software Engineer with a strong background in managing and developing large government projects, optimizing codebases, and ensuring system security. I have successfully led teams in making crucial technical decisions, including selecting technology stacks and implementing high availability and fault tolerance measures. My expertise includes migrating old .Net Core projects, configuring CI/CD operations, converting Windows Service projects to Docker containers, and deploying to Kubernetes clusters. I have also contributed to requirements analysis, training, and architecture design. Throughout my career, I have consistently demonstrated my ability to deliver high-quality results and excel in complex software development environments.",
+        "website": "https://www.halilbozdogan.com",
+        "email": "halilbozdogan@gmail.com",
+        "location": {
+            "city": "Ankara",
+            "countryCode": "TR"
+        },
+        "profiles": [
+            {
+                "username": "bzdgnhalil",
+                "url": "https://twitter.com/bzdgnhalil",
+                "network": "twitter"
+            },
+            {
+                "url": "https://github.com/halilbozdogan",
+                "username": "halilbozdogan",
+                "network": "github"
+            },
+            {
+                "network": "LinkedIn",
+                "username": "halilbozdogan",
+                "url": "https://www.linkedin.com/in/halilbozdogan/"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "Enocta",
+            "position": "Senior Software Engineer",
+            "startDate": "2022-07-31",
+            "highlights": [],
+            "url": "https://www.enocta.com",
+            "location": "Ankara, Turkey"
+        },
+        {
+            "name": "Tiga Bilgi Teknolojileri A.Ş.",
+            "position": "Senior Software Engineer",
+            "startDate": "2015-12-31",
+            "endDate": "2022-11-30",
+            "highlights": [],
+            "summary": "- Develop and manage large government projects.\n- Design and develop high availability and fault tolerance systems.\n- Make the decisions for tech stack on projects as a technical leader.\n- Code Optimization on large and old code bases.\n- Migrating old .Net Core projects to recent framework versions. Mainly 2.x to newer lts versions\n- Fixing security related bugs.\n- Configuration for CI/CD Operations with TFS and On-Premise Kubernetes\n- Converting Windows Service projects to Docker containers and deploying to Kubernetes clusters",
+            "url": "https://www.tiga.com.tr",
+            "location": "Ankara"
+        },
+        {
+            "name": "CLF IT & Management Consulting",
+            "position": "Senior Software Engineer",
+            "startDate": "2014-04-30",
+            "endDate": "2015-10-31",
+            "highlights": [],
+            "summary": "- Actively participated in analysis, design, and development of projects.\n- Able to obtain security clearance for military projects.\n- Wrote a High-Performance Non-Blocking web server for custom messaging integrations.",
+            "url": "https://www.linkedin.com/company/clf-it-&-management-consulting/"
+        },
+        {
+            "name": "Anadolu Agency",
+            "position": "Software Engineer",
+            "startDate": "2013-12-31",
+            "endDate": "2014-02-28",
+            "highlights": [],
+            "summary": "Developed windows/web services for the agency to third-party connections across the country.",
+            "url": "https://www.linkedin.com/company/anadoluajansi/"
+        },
+        {
+            "name": "Innova",
+            "position": "Application Development Consultant",
+            "startDate": "2008-09-30",
+            "endDate": "2013-12-31",
+            "highlights": [],
+            "summary": "- Requirements analysis for projects.\n- Training interms and junior developers.\n- Architecture and coding of the framework.\n- Developed base libraries used across multiple projects.\n- Optimized old libraries for better performance.\n- Analyzing security reports and fixed insecure codes.",
+            "url": "https://www.linkedin.com/company/innova/",
+            "location": "Ankara"
+        },
+        {
+            "name": "Demir Export A.Ş.",
+            "position": "System Support Chief",
+            "startDate": "2007-10-31",
+            "endDate": "2008-08-31",
+            "summary": "- SharePoint Deployment and Configurations.\n- Writing SharePoint Work flows.\n- Administered Active Directory and various Windows Servers",
+            "url": "https://www.linkedin.com/company/demir-export-a-/"
+        },
+        {
+            "name": "www.hitoyun.com",
+            "position": "Junior Editor",
+            "startDate": "2001-12-31",
+            "endDate": "2005-12-31"
+        }
+    ],
+    "volunteer": [],
+    "education": [
+        {
+            "institution": "Hacettepe Üniversitesi",
+            "area": "Computer Education and Instruction Technologies",
+            "studyType": "Bachelor’s Degree",
+            "startDate": "2001-12-31",
+            "endDate": "2005-12-31",
+            "score": "3.13 / 4.0",
+            "courses": []
+        }
+    ],
+    "awards": [],
+    "certificates": [
+        {
+            "name": "MS: Programming in HTML5 with JavaScript and CSS3",
+            "issuer": "Microsoft",
+            "startDate": "2015-07-31",
+            "url": "http://www.microsoft.com/learning/en-us/certification-overview.aspx"
+        },
+        {
+            "name": "MCITP: Enterprise Administrator on Windows Server 2008",
+            "issuer": "Microsoft",
+            "startDate": "2008-07-31",
+            "url": "http://www.microsoft.com/learning/en-us/certification-overview.aspx"
+        },
+        {
+            "name": "MCPD: Enterprise Application Developer 3.5",
+            "issuer": "Microsoft",
+            "startDate": "2010-06-30",
+            "url": "http://www.microsoft.com/learning/en-us/certification-overview.aspx"
+        },
+        {
+            "name": "MCPS: Microsoft Certified Professional",
+            "issuer": "Microsoft",
+            "startDate": "2008-03-31",
+            "url": "http://www.microsoft.com/learning/en-us/certification-overview.aspx"
+        },
+        {
+            "name": "MCTS: Windows Server 2008 Active Directory, Configuration",
+            "issuer": "Microsoft",
+            "startDate": "2008-07-31",
+            "url": "http://www.microsoft.com/learning/en-us/certification-overview.aspx"
+        },
+        {
+            "name": "MCTS: Windows Server 2008 Network Infrastructure, Configuration",
+            "issuer": "Microsoft",
+            "startDate": "2008-07-31",
+            "url": "http://www.microsoft.com/learning/en-us/certification-overview.aspx"
+        },
+        {
+            "name": "MCTS: Windows Server 2008 Applications Infrastructure, Configuration",
+            "issuer": "Microsoft",
+            "startDate": "2008-07-31",
+            "url": "http://www.microsoft.com/learning/en-us/certification-overview.aspx"
+        },
+        {
+            "name": "MCTS: .NET Framework 3.5, Windows Communication Foundation Applications",
+            "issuer": "Microsoft",
+            "startDate": "2010-06-30",
+            "url": "http://www.microsoft.com/learning/en-us/certification-overview.aspx"
+        },
+        {
+            "name": "MCTS: .NET Framework 3.5, ADO.NET Applications",
+            "issuer": "Microsoft",
+            "startDate": "2010-05-31",
+            "url": "http://www.microsoft.com/learning/en-us/certification-overview.aspx"
+        },
+        {
+            "name": "MCTS: .NET Framework 3.5, ASP.NET Applications",
+            "issuer": "Microsoft",
+            "startDate": "2010-04-30",
+            "url": "http://www.microsoft.com/learning/en-us/certification-overview.aspx"
+        }
+    ],
+    "publications": [],
+    "skills": [
+        {
+            "keywords": [
+                "C#",
+                ".Net Core",
+                "MsSQL",
+                "Couchbase",
+                "RDBMS",
+                "Optimization",
+                "Performance Profiling",
+                "Service-Oriented Architecture (SOA)",
+                "Micro Services",
+                "High Performance Applications",
+                "High Availability"
+            ],
+            "level": "Master",
+            "name": "Backend"
+        },
+        {
+            "keywords": [
+                "Docker",
+                "Kubernetes",
+                "Windows Servers",
+                "Linux",
+                "Team Foundation Server (TFS)",
+                "Gitlab",
+                "Jira",
+                "VMware ESX"
+            ],
+            "level": "Master",
+            "name": "Devops"
+        },
+        {
+            "keywords": [
+                "HTML",
+                "Javascript"
+            ],
+            "level": "Intermediate",
+            "name": "Frontend"
+        }
+    ],
+    "languages": [
+        {
+            "fluency": "Professional Working",
+            "language": "English"
+        },
+        {
+            "fluency": "Native Speaker",
+            "language": "Turkish"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Photography"
+        },
+        {
+            "name": "Running"
+        },
+        {
+            "name": "Reading / Writing"
+        },
+        {
+            "name": "Open Source"
+        }
+    ],
+    "references": [],
+    "projects": [
+        {
+            "name": "National Health System - e-Nabiz",
+            "startDate": "2020-12-31",
+            "summary": "Collecting Patient treatments and visits from Health care providers around the country. Displaying laboratory results, prescriptions, and treatment details to individuals through the e-Nabiz portal\n\n- Over 1 million daily requests from Health Care providers.\n- Over 6 million patient data with 20 TB+ capacity on NoSQL (Couchbase) Database.\n- 150+ Servers on NoSQL (Couchbase) Database.\n- Serving e-Nabiz Portal with high availability.\n- Integration with other systems in or outside of the Ministry of Health which includes Diagnostic Imaging services.\n- Migrating old windows service applications to Docker Containers\n- Deployment and Configuration for Kubernetes Ecosystem which includes MetalLB, Nginx-ingress, Harbor Registry",
+            "url": "https://www.enabiz.gov.tr",
+            "endDate": "2020-12-31"
+        },
+        {
+            "name": "Ministry of Youth and Sports - E-Transition System",
+            "startDate": "2019-04-30",
+            "summary": "This project aims to digitize all of the Ministry's operations on the digital platform for reducing paperwork and speeding up internal correspondence between divisions.\n\n- Finding bottlenecks in legacy code.\n- Designing and developing reports for various modules.\n- Helping junior staff with their assignments.",
+            "url": "https://www.gsb.gov.tr",
+            "endDate": "2019-12-31"
+        },
+        {
+            "name": "Turkey Scholarships Application System",
+            "startDate": "2015-12-31",
+            "summary": "Turkey Scholarship is government-based funding for international students. This project enables international students to apply and track their applications and ask questions and receive notifications for their application status and other information for Scholarships. The scholarship Staff portal contains various integrations with other systems like Law enforcement for tracking students’ arrivals and leavings from the country, tracking their academic grades with the council of higher education.\n\n- Azure Cloud Project, Webapps, Azure Functions, Azure SQL Database.\n- Service-Based architecture for easy scalability.\n- In 2019 over 150 thousand applications within one month.\n- Performance monitoring and finding bugs with Application Insights.\n- Very detailed application filtering for decision-makers on the portal.\n- Complex application filtering for decision-makers on the portal.",
+            "url": "https://tbbs.turkiyeburslari.gov.tr",
+            "endDate": "2016-11-30"
+        },
+        {
+            "name": "Internal Company Portal For HR and Finance",
+            "startDate": "2015-01-31",
+            "summary": "With this project we simplified HR and Finance Departments records keeping, work flows and reporting needs for our company.\n\n- Requirement analysis.\n- Deciding technologies in project with minimum TCO and scalability.\n- Identifying work flows for Finance Department with client meetings and on field analysis.\n- Developing Security and Auditing modules as library for easy to use.\n- Concept visual designs of modules.",
+            "endDate": "2015-10-31"
+        },
+        {
+            "name": "Network Device Monitoring And Management",
+            "startDate": "2014-04-30",
+            "summary": "As a Turkish Armed Forces project, we monitored and manage 1000+ devices over network from central location and gathered reports from them.\n\n- After analyzing customer bug reports and field experiences, determined the bottlenecks of application and work flows.\n- Optimizing old code for performance and bug fixes.\n- Adapting new technologies for better system reliability.\n- Planning resources for new customer requests.",
+            "endDate": "2015-10-31"
+        },
+        {
+            "name": "Central Bank of the Republic of Turkey Service Integration",
+            "startDate": "2013-12-31",
+            "summary": "Integration between CBRT Announcement Service (Reuters Marketlink Based) to Anadolu Agency Finance Data Portal AAFinans (https://aafinans.com)\n\n- Analyze Reuters Marketlink message protocol (RS232 Serial Port Communications).\n- Analyze Template and Partial Message update system.\n- Receiving update messages from serial port and applying them on correct announcement templates.\n- Keeping version history for messages and announcements.\n- Displaying announcements on web portal.",
+            "url": "https://www.aafinans.com",
+            "endDate": "2014-02-28"
+        },
+        {
+            "name": "Loyalty Framework",
+            "startDate": "2013-08-31",
+            "summary": "Base framework and components for future projects in Innova Payment and Finance Division.\n\n- Requirements analysis, choosing technologies for components.\n- Developing SMS Component (WCF Service) and applying usage in sample project.\n- Consulting on Auction Service Development.",
+            "endDate": "2013-12-31"
+        },
+        {
+            "name": "Turk Telekom Kurumsal Marka - Turk Telekom Corporate Brand",
+            "startDate": "2013-01-31",
+            "summary": "Creating a loyalty system for Enterprise customers with partnering outside brands using SMS Services.\n\n- Integration between Telekom and Outside services using .NET Technologies.\n- Parsing SMSs comes from customers for error correction and similarity analysis with RegEx.\n- Using SOAP Trace library that I developed, saving XML requests from outside services. Making easy to find errors and achieving better system stability.\n- Identify Server needs for Web and Application projects.\n- IIS and WCF configurations for scalability on customer’s servers and management.\n- Analyzing security reports and fixing insecure codes.",
+            "endDate": "2013-11-30"
+        },
+        {
+            "name": "Bizimle Kazan, Turk Telekom Enterprise Loyalty System",
+            "startDate": "2012-11-30",
+            "summary": "Creating Loyalty system for TT Enterprise Customers who choosing commitments for their bills and usages.\n\n- Developing Library using DSL for determining money penalty who cancels commitment before end time.\n- Integration for Telekom services across various groups (Finance, Customer Relations …).\n- Development of scheduled tasks using Quartz.NET library and provided management interface for end users.\n- Active analysis of code for security and fixing necessary sections after independent reports.\n- Deploying many WCF Services with single shared base and optimizing IIS for better startup, uptime, and scalability.\n- Deployments of Web and Application servers for client.",
+            "endDate": "2013-01-31"
+        },
+        {
+            "name": "TT Nokta – Multimedia Payphone",
+            "startDate": "2009-12-31",
+            "summary": "Producing 100+ pay phones which provide what current pay phones don’t carry such as Internet services, SMS, E-Mail, Video telephony, taking pictures and capturing videos at the same time as an ordinary phone call.\n\n- Simplified Image based deployment solution. Ready to start HDD preparations with full user experience.\n- Automatic Backup - Update - Restore solution with using minimal bandwidth over Remote Web Services.\n- URL control for Internet Module. (using Regex only valid URLs can be entered to address bar and disables in URL malicious).\n- Application and Web Server load balancing and security configurations. Optimizing IIS App Pool parameters for scalability.",
+            "endDate": "2011-12-31"
+        }
     ]
-  },
-  "education": [
-    {
-      "endDate": "2009-12-12",
-      "startDate": "2008-02-12",
-      "area": "Software Engineering (incomplete)",
-      "studyType": "Bachelors",
-      "institution": "The University of Queensland"
-    }
-  ],
-  "references": [
-    {
-      "reference": "Thomas was hired as a lead developer and, upon the leaving of our co-founder took over as CTO of Earbits. Thomas is, hands down, one of those A Players you hear of companies dying to hire. He is incredibly smart, not just at code but about everything from classical music to Chinese language and culture. Thomas is great to work with and, as a well established contributor to open source projects and several successful ventures, commands the respect of engineers at all levels. I would suggest doing anything you can to have him on your team.",
-      "name": "Joey Flores, Co-founder and CEO of Earbits, Inc."
-    },
-    {
-      "reference": "I've had the great pleasure of working with Thomas for the past three years at Earbits, and on a few side projects. Two years ago our CTO left on a moment's notice, Thomas saved our company by quickly stepping up to fill this role. He has been with our company through thick and thin and made serious personal sacrifices in order to help the company during tough times. He is a phenomenal hacker and a true team player. Highly recommended!",
-      "name": "Yotam Rosenbaum, SVP of Operations, Earbits, Inc."
-    },
-    {
-      "reference": "Thomas is an extremely talented engineer with a very broad range of skills and experience. From being a thought leader in the front-end community via backbonetutorials.com and cdnjs.com, to designing and implementing the API for cdnjs.com, working with Thomas has been fantastic learning experience. Thomas is truly a full stack develop, and his work output is incredible. If there is any opportunity to work with Thomas, I take it. He is the definition of an A player.",
-      "name": "Ryan Kirkman, Senior Software Engineer at Nerdwallet"
-    },
-    {
-      "reference": "On Thomas Davis... Hire this guy. Do not be fooled. Incredibly capable and fast. Plays well with others. Unbelievable at front-end work end programming but that is just the start. Visionary. Hire him before I do.",
-      "name": "Greg Davis"
-    }
-  ],
-  "skills": [
-    {
-      "keywords": [
-        "HTML / JSX",
-        "SCSS / CSS / BEM / Styled Components",
-        "Javascript / Typescript",
-        "React / Next",
-        "Redux / Apollo"
-      ],
-      "level": "Senior",
-      "name": "Frontend"
-    },
-    {
-      "keywords": ["Node", "Ruby", "Python", "Postgres", "Redis", "Serverless"],
-      "level": "Senior",
-      "name": "Backend"
-    },
-    {
-      "keywords": ["AWS", "G Cloud", "Heroku", "Caching"],
-      "level": "Senior",
-      "name": "Devops"
-    }
-  ],
-  "awards": [
-    {
-      "title": "Defender of the Internet",
-      "awarder": "Fight For The Future"
-    }
-  ],
-  "work": [
-    {
-      "summary": "Tokenized is a Bitcoin wallet for issuing, managing and trading digital tokens. I built out the front end which was packaged as an electron app. It was a difficult frontend to build because we store the users keys locally and used them to sign transactions and contracts.",
-      "website": "https://tokenized.com/",
-      "name": "Tokenized",
-      "location": "Melbourne",
-      "position": "Senior Javascript Developer",
-      "startDate": "2020-05-05",
-      "highlights": ["React", "Redux", "SCSS", "Product"]
-    },
-    {
-      "summary": "Blockbid is an Australian crypto currency exchange. I started off on the frontend but eventually became lead tech and worked on every moving piece of the exchange. I really enjoyed working with liquidity providers and connecting their platforms to help us achieve liquid markets.",
-      "website": "https://platform.blockbid.io",
-      "name": "Blockbid",
-      "location": "Melbourne",
-      "position": "Senior Javascript Developer",
-      "startDate": "2018-03-01",
-      "endDate": "2020-01-01",
-      "highlights": [
-        "React, Apollo, Styled Components",
-        "Node.js / Rails",
-        "Docker / Heroku / GCP",
-        "Used Figma for design and UX work",
-        "Optimizing markets with tens of millions of rows using SQL."
-      ]
-    },
-    {
-      "highlights": [
-        "Worked with Postgres, Redis and Dynamodb for storage.",
-        "Hosted on a mixture of Heroku Apps and EC2 servers.",
-        "Caching by Fastly and Cloudflare",
-        "Hybrid app supported on all platforms"
-      ],
-      "summary": "Built a very large and complex React / Redux application. It works on all platforms and has IOS/Android builds due to it being a PWA. (wrapped it in React Native though only implementing a WebView)",
-      "website": "https://listium.com",
-      "pinned": true,
-      "name": "Listium",
-      "position": "Developer",
-      "startDate": "2016-01-01",
-      "endDate": "2018-01-01"
-    },
-    {
-      "highlights": [
-        "Millions of sites use the CDN in production",
-        "Larger market share than Yahoo's, Microsoft's and Google's javascript content distribution networks",
-        "We serve hundreds of billions request a month",
-        "Contains over 3000 popular Javascript libraries",
-        "Millions of developers visit the site per year"
-      ],
-      "pinned": true,
-      "summary": "Following Google's CDN for jQuery, we decided to start a CDN for the less popular Javascript frameworks. The CDN is community moderated and open source on GitHub. We secured a partnership with Cloudflare who now supports the infrastructure.",
-      "website": "http://www.cdnjs.com",
-      "name": "Cdnjs",
-      "position": "Co-Founder",
-      "startDate": "2011-01-08"
-    },
-    {
-      "highlights": [
-        "Developed new tools for contacting congress",
-        "Brainstormed campaign ideas to raise maximum awareness about issues",
-        "Lots of social networking integration"
-      ],
-      "summary": "Hired to take EFF's campaigning to the next level by building an action centre in Ruby on Rails. The action centre is built around some large open source tools that lower the barrier to entry when contacting congress.",
-      "website": "http://www.eff.org",
-      "name": "Electronic Frontier Foundation",
-      "position": "Developer",
-      "startDate": "2014-04-01",
-      "endDate": "2016-01-01"
-    },
-    {
-      "highlights": [
-        "Managed a small team of developers and designers",
-        "Built the entire frontend application with Backbone.js",
-        "Transferred all of the infrastructure from Heroku to AWS"
-      ],
-      "summary": "Started off as a front end developer but took on the role of CTO in early 2013. The application frontend is built with Javascript and organized as a single page application that talks to a collection of Rails web servers which are connected to MongoDB.",
-      "website": "http://www.earbits.com",
-      "name": "Earbits",
-      "position": "CTO",
-      "endDate": "2015-01-09",
-      "startDate": "2013-03-08"
-    },
-    {
-      "highlights": ["This resume is built with JSON Resume", "Over 3000 stars on Github", "Community developed themes", "Tens of thousands of users"],
-      "summary": "JSON Resume is a community driven open source initiative to create a JSON based standard for resumes. There is no reason why there can't be a common standard for writing a resume that can be extended with an ecosystem of open source tools.",
-      "website": "http://jsonresume.org",
-      "pinned": true,
-      "name": "JSON Resume",
-      "position": "Founder",
-      "startDate": "2014-04-01"
-    },
-    {
-      "highlights": [
-        "Generated  37,000,000 banner views",
-        "100, 000 phone calls to congress",
-        "500, 000 emails",
-        "250, 000 signatures"
-      ],
-      "summary": "Worked on many politically charged campaigns against mass surveillance. Not only technically challenging work but also a lot of networking and getting my hands dirty with politics.    Our biggest project was \"TheDayWeFightBack\"..",
-      "website": "http://www.taskforce.is",
-      "name": "Taskforce.is",
-      "position": "Developer",
-      "startDate": "2013-06-01",
-      "endDate": "2016-01-01"
-    },
-    {
-      "highlights": [
-        "The site and blog combined have managed to receive over 200,000 visitors in 2014."
-      ],
-      "summary": "An international directory of civilian drone / UAV operators for hire. Services include aerial photography, aerial video, mapping, surveying, precision agriculture, real estate photography, remote inspections and infrared imaging. Our plan is to be the place to go when looking for UAV/Drone services. The website is built in Backbone.js and API is built with Node.js and Postgres. ",
-      "website": "http://www.dronehire.org",
-      "name": "Drone Hire",
-      "position": "Co-Founder",
-      "startDate": "2013-01-01"
-    },
-    {
-      "highlights": [
-        "Over two million unique visitors a year",
-        "25,000+ ebook downloads",
-        "300,000+ Youtube views"
-      ],
-      "summary": "I write tutorials and blog post regarding the popular Javascript framework Backbone.js. The tutorials cover a range of topics regarding front end development aimed at beginners, experts and anyone in between.",
-      "website": "http://backbonetutorials.com",
-      "name": "BackboneTutorials.com",
-      "position": "Founder",
-      "startDate": "2011-01-01",
-      "endDate": "2014-01-01"
-    },
-    {
-      "summary": "Ephox is a worldwide company who is heavily involved with the development of TinyMce and enterprise editors. My primary role included building front-end widgets and applications. Worked on a major product using Backbone.js as a base. Heavily involved in UI/UX design and wire-framing. Also spend a lot of time designing API specifications and documentation.",
-      "website": "http://ephox.com",
-      "name": "Ephox",
-      "position": "Front-end Developer",
-      "endDate": "2012-06-01",
-      "startDate": "2011-01-01"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Gardening"
-    },
-    {
-      "name": "Music / Jamming"
-    },
-    {
-      "name": "Reading / Writing"
-    },
-    {
-      "name": "Open Source"
-    }
-  ]
 }
