@@ -36,7 +36,8 @@
             "name": "Enocta",
             "position": "Senior Software Engineer",
             "startDate": "2022-07-31",
-            "highlights": [],
+            "highlights": ["Azure DevOps","Performance","SQL Server","Multi Timezone Application"],
+            "summary": "In my role at Enocta, I have undertaken various responsibilities and tasks. These include identifying and resolving performance issues within the Web API service, fixing bugs, preparing reports using stored procedures in SQL Server, fulfilling new development requests, and ensuring the application supports multi-timezone display and settings for users working in different time zones. Additionally, I took the lead in transitioning the TFS codebase to Git and established CI/CD processes on Azure DevOps. ",
             "url": "https://www.enocta.com",
             "location": "Ankara, Turkey"
         },
