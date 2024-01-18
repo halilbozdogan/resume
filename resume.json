@@ -35,7 +35,7 @@
         {
             "name": "Enocta",
             "position": "Senior Software Engineer",
-            "startDate": "2022-07-31",
+            "startDate": "2022-07",
             "highlights": ["Azure DevOps","Performance","SQL Server","Multi Timezone Application"],
             "summary": "In this role, I played a critical part by identifying and resolving performance issues on our Web API service. I also gained hands-on experience with fixing programming errors and preparing reports using stored procedure on SQL server.\r\nI played a significant role in designing and implementing new software development projects as per the requests. Another significant project of mine at Enocta was acquiring the ability to set and display multiple time zone settings in our application to meet the needs of users in different time zones.\r\nIn my work on software infrastructure, I took on the task of converting our TFS code infrastructure to Git, broadening my technical skills and enhancing the productivity and collaboration capabilities of my team. My final task was to successfully organize and set up CI/CD processes on Azure Devops, thereby gaining the capability to effectively manage every stage of the software development cycle from start to finish.",
             "url": "https://www.enocta.com",
@@ -44,8 +44,8 @@
         {
             "name": "Tiga Bilgi Teknolojileri A.Ş.",
             "position": "Senior Software / Devops Engineer",
-            "startDate": "2015-12-31",
-            "endDate": "2022-11-30",
+            "startDate": "2015-12",
+            "endDate": "2022-07",
             "highlights": ["Kubernets","High Performance","DevOps","High Availability","Leader","Code Optimization","Docker","Couchbase","NoSQL"],
             "summary": "At Tiga Bilgi Teknolojileri A.Ş., I had the opportunity to develop and manage large government projects.\r\nAs a technical leader, I made significant decisions regarding the tech stack for these projects. I also specialized in designing and developing high availability and fault tolerance systems.\r\nAdditionally, I focused on code optimization for large and old code bases, as well as fixing security-related bugs. Another key responsibility was migrating outdated .Net Core projects to newer versions of the framework, specifically from 2.x to the more recent LTS versions.\r\nIn terms of operations, I worked on configuring CI/CD operations with TFS and On-Premise Kubernetes. Furthermore, I converted Windows Service projects to Docker containers and deployed them to Kubernetes clusters.",
             "url": "https://www.tiga.com.tr",
@@ -54,8 +54,8 @@
         {
             "name": "CLF IT & Management Consulting",
             "position": "Senior Software Engineer",
-            "startDate": "2014-04-30",
-            "endDate": "2015-10-31",
+            "startDate": "2014-04",
+            "endDate": "2015-10",
             "highlights": ["Military Project","Security","High Performance"],
             "summary": "During my tenure at CLF IT & Management Consulting, I actively participated in the analysis, design, and development of various projects. In addition, I was able to obtain security clearance for military projects.\r\nOne of my notable accomplishments was creating a High Performance Non-Blocking web server for custom messaging integrations.",
             "url": "https://www.linkedin.com/company/clf-it-&-management-consulting/"
@@ -63,30 +63,30 @@
         {
             "name": "Anadolu Agency",
             "position": "Software Engineer",
-            "startDate": "2013-12-31",
-            "endDate": "2014-02-28",
+            "startDate": "2013-12",
+            "endDate": "2014-02",
             "highlights": ["Integration","Web Services"],
             "summary": "At Anadolu Agency, I played a vital role in developing windows/web services to facilitate third-party connections across the country.\r\nThis involved ensuring smooth and reliable communication channels between the agency and external entities.",
-            "url": "https://www.linkedin.com/company/anadoluajansi/"
+            "url": "https://www.aa.com.tr/"
         },
         {
             "name": "Innova",
             "position": "Application Development Consultant",
-            "startDate": "2008-09-30",
-            "endDate": "2013-12-31",
+            "startDate": "2008-09",
+            "endDate": "2013-12",
             "highlights": ["Training Interns","Code Optimization","High Performance","Security Analysis"],
             "summary": "In my role as an Application Development Consultant at Innova, my responsibilities included requirements analysis for projects.\r\nI also had the opportunity to train interns and junior developers to hone their skills. Moreover, I took part in the architecture and coding of the framework, and I developed base libraries that were utilized across multiple projects.\r\nAdditionally, I optimized existing libraries to enhance performance and actively addressed security vulnerabilities by analyzing security reports and resolving insecure code.",
-            "url": "https://www.linkedin.com/company/innova/",
+            "url": "https://www.innova.com.tr/home",
             "location": "Ankara"
         },
         {
             "name": "Demir Export A.Ş.",
             "position": "System Support Chief",
-            "startDate": "2007-10-31",
-            "endDate": "2008-08-31",
+            "startDate": "2007-10",
+            "endDate": "2008-08",
             "highlights": ["SharePoint","Windows Servers","Active Directory","System Support"],
             "summary": "During my time as a System Support Chief at Demir Export A.Ş., I focused on SharePoint deployment and configurations. I also wrote SharePoint workflows and administered Active Directory along with various Windows Servers.\r\nThese responsibilities allowed me to gain valuable expertise in system support and administration.",
-            "url": "https://www.linkedin.com/company/demir-export-a-/"
+            "url": "https://www.demirexport.com"
         }
     ],
     "volunteer": [],
@@ -95,10 +95,9 @@
             "institution": "Hacettepe Üniversitesi",
             "area": "Computer Education and Instruction Technologies",
             "studyType": "Bachelor’s Degree",
-            "startDate": "2001-12-31",
-            "endDate": "2005-12-31",
-            "score": "3.13 / 4.0",
-            "courses": []
+            "startDate": "2001-09",
+            "endDate": "2005-06",
+            "score": "3.13 / 4.0"
         }
     ],
     "awards": [],
@@ -233,10 +232,10 @@
     "projects": [
         {
             "name": "National Health System - e-Nabiz",
-            "startDate": "2020-12-31",
+            "startDate": "2018-09",
             "summary": "This project aimed at gathering patient treatment and visit details from healthcare providers throughout the country, showcasing results on a digital portal. e-Nabiz managed over a million daily requests from healthcare providers, storing over 6 million patient data on a robust NoSQL database. I played a significant role in migrating legacy applications to docker containers and deploying configuration for a Kubernetes ecosystem.",
             "url": "https://www.enabiz.gov.tr",
-            "endDate": "2020-12-31"
+            "endDate": "2022-07"
         },
         {
             "name": "Ministry of Youth and Sports - E-Transition System",
@@ -268,7 +267,7 @@
             "name": "Central Bank of the Republic of Turkey Service Integration",
             "startDate": "2013-12-31",
             "summary": "An integration project between Reuters Marketlink and Anadolu Agency Finance Data Portal AAFinans. The project involved in-depth protocol analysis, version history tracking for messages, and web portal display of announcements.",
-            "url": "https://www.aafinans.com",
+            "url": "https://aafinans.com/",
             "endDate": "2014-02-28"
         },
         {
