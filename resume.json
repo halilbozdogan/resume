@@ -37,7 +37,7 @@
             "position": "Senior Software Engineer",
             "startDate": "2022-07-31",
             "highlights": ["Azure DevOps","Performance","SQL Server","Multi Timezone Application"],
-            "summary": "In my role at Enocta, I have undertaken various responsibilities and tasks. These include identifying and resolving performance issues within the Web API service, fixing bugs, preparing reports using stored procedures in SQL Server, fulfilling new development requests, and ensuring the application supports multi-timezone display and settings for users working in different time zones. Additionally, I took the lead in transitioning the TFS codebase to Git and established CI/CD processes on Azure DevOps. ",
+            "summary": "In this role, I played a critical part by identifying and resolving performance issues on our Web API service. I also gained hands-on experience with fixing programming errors and preparing reports using stored procedure on SQL server.\r\nI played a significant role in designing and implementing new software development projects as per the requests. Another significant project of mine at Enocta was acquiring the ability to set and display multiple time zone settings in our application to meet the needs of users in different time zones.\r\nIn my work on software infrastructure, I took on the task of converting our TFS code infrastructure to Git, broadening my technical skills and enhancing the productivity and collaboration capabilities of my team. My final task was to successfully organize and set up CI/CD processes on Azure Devops, thereby gaining the capability to effectively manage every stage of the software development cycle from start to finish.",
             "url": "https://www.enocta.com",
             "location": "Ankara, Turkey"
         },
@@ -47,7 +47,7 @@
             "startDate": "2015-12-31",
             "endDate": "2022-11-30",
             "highlights": ["Kubernets","High Performance","DevOps","High Availability","Leader","Code Optimization","Docker"],
-            "summary": "At Tiga Bilgi Teknolojileri A.Ş., I had the opportunity to develop and manage large government projects. As a technical leader, I made significant decisions regarding the tech stack for these projects. I also specialized in designing and developing high availability and fault tolerance systems. Additionally, I focused on code optimization for large and old code bases, as well as fixing security-related bugs. Another key responsibility was migrating outdated .Net Core projects to newer versions of the framework, specifically from 2.x to the more recent LTS versions. In terms of operations, I worked on configuring CI/CD operations with TFS and On-Premise Kubernetes. Furthermore, I converted Windows Service projects to Docker containers and deployed them to Kubernetes clusters.",
+            "summary": "At Tiga Bilgi Teknolojileri A.Ş., I had the opportunity to develop and manage large government projects.\r\nAs a technical leader, I made significant decisions regarding the tech stack for these projects. I also specialized in designing and developing high availability and fault tolerance systems.\r\nAdditionally, I focused on code optimization for large and old code bases, as well as fixing security-related bugs. Another key responsibility was migrating outdated .Net Core projects to newer versions of the framework, specifically from 2.x to the more recent LTS versions.\r\nIn terms of operations, I worked on configuring CI/CD operations with TFS and On-Premise Kubernetes. Furthermore, I converted Windows Service projects to Docker containers and deployed them to Kubernetes clusters.",
             "url": "https://www.tiga.com.tr",
             "location": "Ankara"
         },
@@ -57,7 +57,7 @@
             "startDate": "2014-04-30",
             "endDate": "2015-10-31",
             "highlights": ["Military Project","Security","High Performance"],
-            "summary": "During my tenure at CLF IT & Management Consulting, I actively participated in the analysis, design, and development of various projects. In addition, I was able to obtain security clearance for military projects. One of my notable accomplishments was creating a High Performance Non-Blocking web server for custom messaging integrations.",
+            "summary": "During my tenure at CLF IT & Management Consulting, I actively participated in the analysis, design, and development of various projects. In addition, I was able to obtain security clearance for military projects.\r\nOne of my notable accomplishments was creating a High Performance Non-Blocking web server for custom messaging integrations.",
             "url": "https://www.linkedin.com/company/clf-it-&-management-consulting/"
         },
         {
@@ -66,7 +66,7 @@
             "startDate": "2013-12-31",
             "endDate": "2014-02-28",
             "highlights": ["Integration","Web Services"],
-            "summary": "At Anadolu Agency, I played a vital role in developing windows/web services to facilitate third-party connections across the country. This involved ensuring smooth and reliable communication channels between the agency and external entities.",
+            "summary": "At Anadolu Agency, I played a vital role in developing windows/web services to facilitate third-party connections across the country.\r\nThis involved ensuring smooth and reliable communication channels between the agency and external entities.",
             "url": "https://www.linkedin.com/company/anadoluajansi/"
         },
         {
@@ -75,7 +75,7 @@
             "startDate": "2008-09-30",
             "endDate": "2013-12-31",
             "highlights": ["Training Interns","Code Optimization","High Performance","Security Analysis"],
-            "summary": "In my role as an Application Development Consultant at Innova, my responsibilities included requirements analysis for projects. I also had the opportunity to train interns and junior developers to hone their skills. Moreover, I took part in the architecture and coding of the framework, and I developed base libraries that were utilized across multiple projects. Additionally, I optimized existing libraries to enhance performance and actively addressed security vulnerabilities by analyzing security reports and resolving insecure code.",
+            "summary": "In my role as an Application Development Consultant at Innova, my responsibilities included requirements analysis for projects.\r\nI also had the opportunity to train interns and junior developers to hone their skills. Moreover, I took part in the architecture and coding of the framework, and I developed base libraries that were utilized across multiple projects.\r\nAdditionally, I optimized existing libraries to enhance performance and actively addressed security vulnerabilities by analyzing security reports and resolving insecure code.",
             "url": "https://www.linkedin.com/company/innova/",
             "location": "Ankara"
         },
@@ -85,7 +85,7 @@
             "startDate": "2007-10-31",
             "endDate": "2008-08-31",
             "highlights": ["SharePoint","Windows Servers","Active Directory","System Support"],
-            "summary": "During my time as a System Support Chief at Demir Export A.Ş., I focused on SharePoint deployment and configurations. I also wrote SharePoint workflows and administered Active Directory along with various Windows Servers. These responsibilities allowed me to gain valuable expertise in system support and administration.",
+            "summary": "During my time as a System Support Chief at Demir Export A.Ş., I focused on SharePoint deployment and configurations. I also wrote SharePoint workflows and administered Active Directory along with various Windows Servers.\r\nThese responsibilities allowed me to gain valuable expertise in system support and administration.",
             "url": "https://www.linkedin.com/company/demir-export-a-/"
         }
     ],
@@ -235,65 +235,65 @@
         {
             "name": "National Health System - e-Nabiz",
             "startDate": "2020-12-31",
-            "summary": "Collecting Patient treatments and visits from Health care providers around the country. Displaying laboratory results, prescriptions, and treatment details to individuals through the e-Nabiz portal\n\n- Over 1 million daily requests from Health Care providers.\n- Over 6 million patient data with 20 TB+ capacity on NoSQL (Couchbase) Database.\n- 150+ Servers on NoSQL (Couchbase) Database.\n- Serving e-Nabiz Portal with high availability.\n- Integration with other systems in or outside of the Ministry of Health which includes Diagnostic Imaging services.\n- Migrating old windows service applications to Docker Containers\n- Deployment and Configuration for Kubernetes Ecosystem which includes MetalLB, Nginx-ingress, Harbor Registry",
+            "summary": "This project aimed at gathering patient treatment and visit details from healthcare providers throughout the country, showcasing results on a digital portal. e-Nabiz managed over a million daily requests from healthcare providers, storing over 6 million patient data on a robust NoSQL database. I played a significant role in migrating legacy applications to docker containers and deploying configuration for a Kubernetes ecosystem.",
             "url": "https://www.enabiz.gov.tr",
             "endDate": "2020-12-31"
         },
         {
             "name": "Ministry of Youth and Sports - E-Transition System",
             "startDate": "2019-04-30",
-            "summary": "This project aims to digitize all of the Ministry's operations on the digital platform for reducing paperwork and speeding up internal correspondence between divisions.\n\n- Finding bottlenecks in legacy code.\n- Designing and developing reports for various modules.\n- Helping junior staff with their assignments.",
+            "summary": "This digital transformation project aimed at digitizing all internal processes, significantly reducing paperwork and enhancing workflow efficiency. Here, I invested my energy into improving legacy code and mentoring junior staff.",
             "url": "https://www.gsb.gov.tr",
             "endDate": "2019-12-31"
         },
         {
             "name": "Turkey Scholarships Application System",
             "startDate": "2015-12-31",
-            "summary": "Turkey Scholarship is government-based funding for international students. This project enables international students to apply and track their applications and ask questions and receive notifications for their application status and other information for Scholarships. The scholarship Staff portal contains various integrations with other systems like Law enforcement for tracking students’ arrivals and leavings from the country, tracking their academic grades with the council of higher education.\n\n- Azure Cloud Project, Webapps, Azure Functions, Azure SQL Database.\n- Service-Based architecture for easy scalability.\n- In 2019 over 150 thousand applications within one month.\n- Performance monitoring and finding bugs with Application Insights.\n- Very detailed application filtering for decision-makers on the portal.\n- Complex application filtering for decision-makers on the portal.",
+            "summary": "Government-funded project enabled international students to apply and track their scholarship applications efficiently. Utilizing Azure technology, this system catered to over 150 thousand applications in just a month in 2019.",
             "url": "https://tbbs.turkiyeburslari.gov.tr",
             "endDate": "2016-11-30"
         },
         {
             "name": "Internal Company Portal For HR and Finance",
             "startDate": "2015-01-31",
-            "summary": "With this project we simplified HR and Finance Departments records keeping, work flows and reporting needs for our company.\n\n- Requirement analysis.\n- Deciding technologies in project with minimum TCO and scalability.\n- Identifying work flows for Finance Department with client meetings and on field analysis.\n- Developing Security and Auditing modules as library for easy to use.\n- Concept visual designs of modules.",
+            "summary": "Internal project aimed at streamlining HR and Finance Departments' operations. My prime duties were in identifying workflows, developing security modules, and creating conceptual visual designs of individual modules.",
             "endDate": "2015-10-31"
         },
         {
             "name": "Network Device Monitoring And Management",
             "startDate": "2014-04-30",
-            "summary": "As a Turkish Armed Forces project, we monitored and manage 1000+ devices over network from central location and gathered reports from them.\n\n- After analyzing customer bug reports and field experiences, determined the bottlenecks of application and work flows.\n- Optimizing old code for performance and bug fixes.\n- Adapting new technologies for better system reliability.\n- Planning resources for new customer requests.",
+            "summary": "This Turkish Armed Forces project, allowed remote monitoring and management of more than 1000 devices. I played a significant role in optimizing old code and guiding resources for new customer requests.",
             "endDate": "2015-10-31"
         },
         {
             "name": "Central Bank of the Republic of Turkey Service Integration",
             "startDate": "2013-12-31",
-            "summary": "Integration between CBRT Announcement Service (Reuters Marketlink Based) to Anadolu Agency Finance Data Portal AAFinans (https://aafinans.com)\n\n- Analyze Reuters Marketlink message protocol (RS232 Serial Port Communications).\n- Analyze Template and Partial Message update system.\n- Receiving update messages from serial port and applying them on correct announcement templates.\n- Keeping version history for messages and announcements.\n- Displaying announcements on web portal.",
+            "summary": "An integration project between Reuters Marketlink and Anadolu Agency Finance Data Portal AAFinans. The project involved in-depth protocol analysis, version history tracking for messages, and web portal display of announcements.",
             "url": "https://www.aafinans.com",
             "endDate": "2014-02-28"
         },
         {
             "name": "Loyalty Framework",
             "startDate": "2013-08-31",
-            "summary": "Base framework and components for future projects in Innova Payment and Finance Division.\n\n- Requirements analysis, choosing technologies for components.\n- Developing SMS Component (WCF Service) and applying usage in sample project.\n- Consulting on Auction Service Development.",
+            "summary": " This project involved the development of base framework and components for future projects in Innova Payment and Finance Division.",
             "endDate": "2013-12-31"
         },
         {
             "name": "Turk Telekom Kurumsal Marka - Turk Telekom Corporate Brand",
             "startDate": "2013-01-31",
-            "summary": "Creating a loyalty system for Enterprise customers with partnering outside brands using SMS Services.\n\n- Integration between Telekom and Outside services using .NET Technologies.\n- Parsing SMSs comes from customers for error correction and similarity analysis with RegEx.\n- Using SOAP Trace library that I developed, saving XML requests from outside services. Making easy to find errors and achieving better system stability.\n- Identify Server needs for Web and Application projects.\n- IIS and WCF configurations for scalability on customer’s servers and management.\n- Analyzing security reports and fixing insecure codes.",
+            "summary": "This project involved creating a loyalty system for enterprise clients partnering with external brands using SMS Services. I focused on integration using .NET Technologies, error analysis, and server requirements.",
             "endDate": "2013-11-30"
         },
         {
             "name": "Bizimle Kazan, Turk Telekom Enterprise Loyalty System",
             "startDate": "2012-11-30",
-            "summary": "Creating Loyalty system for TT Enterprise Customers who choosing commitments for their bills and usages.\n\n- Developing Library using DSL for determining money penalty who cancels commitment before end time.\n- Integration for Telekom services across various groups (Finance, Customer Relations …).\n- Development of scheduled tasks using Quartz.NET library and provided management interface for end users.\n- Active analysis of code for security and fixing necessary sections after independent reports.\n- Deploying many WCF Services with single shared base and optimizing IIS for better startup, uptime, and scalability.\n- Deployments of Web and Application servers for client.",
+            "summary": "Loyalty initiative served enterprise customers who opted for bill commitments. I played a crucial role in developing a library to calculate cancellation penalties and securing the system.",
             "endDate": "2013-01-31"
         },
         {
             "name": "TT Nokta – Multimedia Payphone",
             "startDate": "2009-12-31",
-            "summary": "Producing 100+ pay phones which provide what current pay phones don’t carry such as Internet services, SMS, E-Mail, Video telephony, taking pictures and capturing videos at the same time as an ordinary phone call.\n\n- Simplified Image based deployment solution. Ready to start HDD preparations with full user experience.\n- Automatic Backup - Update - Restore solution with using minimal bandwidth over Remote Web Services.\n- URL control for Internet Module. (using Regex only valid URLs can be entered to address bar and disables in URL malicious).\n- Application and Web Server load balancing and security configurations. Optimizing IIS App Pool parameters for scalability.",
+            "summary": "This project aimed at developing 100+ multimedia payphones offering internet services, SMS, email, and more. My responsibilities included creating an image-based deployment solution, automatic backup/update/restore solution, and URL control for the Internet Module.",
             "endDate": "2011-12-31"
         }
     ]
