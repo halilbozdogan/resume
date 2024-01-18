@@ -5,7 +5,7 @@
     "basics": {
         "name": "Halil Bozdoğan",
         "label": "Senior Software / DevOps Engineer",
-        "image": "https://media.licdn.com/dms/image/D4D03AQHw-Fs4rE0Uzg/profile-displayphoto-shrink_400_400/0/1665921236521?e=1710979200&v=beta&t=hYlf571JhweFNoVykGyDnvXBxYhsJeayaDq3dvPTkPg",
+        "image": "https://www.halilbozdogan.com/images/avatar.jpeg",
         "summary": "I am an experienced Senior Software Engineer with a strong background in managing and developing large government projects, optimizing codebases, and ensuring system security. I have successfully led teams in making crucial technical decisions, including selecting technology stacks and implementing high availability and fault tolerance measures. My expertise includes migrating old .Net Core projects, configuring CI/CD operations, converting Windows Service projects to Docker containers, and deploying to Kubernetes clusters. I have also contributed to requirements analysis, training, and architecture design. Throughout my career, I have consistently demonstrated my ability to deliver high-quality results and excel in complex software development environments.",
         "website": "https://www.halilbozdogan.com",
         "email": "halilbozdogan@gmail.com",
