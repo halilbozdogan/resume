@@ -4,7 +4,7 @@
   },
   "basics": {
     "name": "Halil Bozdogan",
-    "label": "Senior Software / DevOps Engineer",
+    "label": "Senior DevOps Engineer",
     "email": "halilbozdogan@gmail.com",
     "image": "https://www.halilbozdogan.com/images/avatar.jpeg",
     "url": "https://www.halilbozdogan.com",
@@ -16,7 +16,7 @@
     "profiles": [
       {
         "network": "Twitter",
-        "username": "bzdgnhalil",
+        "username": "hll_bzdgn",
         "url": "https://twitter.com/hll_bzdgn"
       },
       {
@@ -313,24 +313,6 @@
       "date": "2024-12",
       "url": "https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/",
       "id": "LF-ghiurlz7an"
-    }
-  ],
-  "interests": [
-    {
-      "name": "Photography",
-      "keywords": []
-    },
-    {
-      "name": "Running",
-      "keywords": []
-    },
-    {
-      "name": "Reading & Writing",
-      "keywords": []
-    },
-    {
-      "name": "Open Source",
-      "keywords": []
     }
   ]
 }
