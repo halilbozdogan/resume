@@ -3,7 +3,19 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="CV of Halil Bozdogan — Senior Software / DevOps Engineer."
+        />
+        <meta name="color-scheme" content="light dark" />
         <title>Halil Bozdogan - CV</title>
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+        <link rel="preconnect" href="https://cdn.simpleicons.org" crossorigin />
+        <link
+            rel="preconnect"
+            href="https://raw.githubusercontent.com"
+            crossorigin
+        />
         <link
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
@@ -73,6 +85,27 @@
             a:hover {
                 text-decoration: underline;
             }
+            a:focus-visible,
+            button:focus-visible {
+                outline: 3px solid var(--accent);
+                outline-offset: 3px;
+                border-radius: 6px;
+            }
+
+            .skip-link {
+                position: absolute;
+                left: -9999px;
+                top: 10px;
+                background: var(--body-bg);
+                color: var(--primary);
+                border: 1px solid var(--border-color);
+                padding: 8px 10px;
+                border-radius: 6px;
+                z-index: 999;
+            }
+            .skip-link:focus {
+                left: 10px;
+            }
 
             /* Header */
             header {
@@ -95,9 +128,20 @@
             .contact-info {
                 margin-top: 15px;
                 font-size: 0.95em;
+                font-style: normal;
             }
-            .contact-info span {
-                margin: 0 8px;
+            .contact-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 8px 14px;
+            }
+            .contact-list li {
+                display: inline-flex;
+                align-items: baseline;
             }
 
             /* Sections */
@@ -230,6 +274,15 @@
             .job-desc {
                 margin-top: 5px;
             }
+            .job {
+                margin-bottom: 28px;
+            }
+            .job:last-child {
+                margin-bottom: 0;
+            }
+            h3.job-title {
+                margin: 0;
+            }
             ul {
                 margin-top: 8px;
                 padding-left: 20px;
@@ -275,6 +328,9 @@
             }
 
             /* --- PRINT STYLES (Always White) --- */
+            @page {
+                margin: 14mm;
+            }
             @media print {
                 body {
                     max-width: 100%;
@@ -282,6 +338,7 @@
                     background-color: #fff;
                     color: #000;
                     -webkit-print-color-adjust: exact;
+                    print-color-adjust: exact;
                 }
                 .no-print {
                     display: none;
@@ -289,6 +346,11 @@
                 a {
                     text-decoration: none;
                     color: #000;
+                }
+                .skill-item i,
+                .skill-item img,
+                .cert-icon {
+                    display: none !important;
                 }
                 .skill-item,
                 .cert-box {
@@ -331,475 +393,596 @@
                     flex-direction: column;
                 }
             }
+
+            @media (prefers-reduced-motion: reduce) {
+                * {
+                    transition: none !important;
+                }
+            }
         </style>
     </head>
     <body>
+        <a class="skip-link" href="#content">Skip to content</a>
         <header>
             <h1>Halil Bozdogan</h1>
             <div class="subtitle">Senior Software / DevOps Engineer</div>
-            <div class="contact-info">
-                <span>Ankara, Turkey</span> |
-                <span>halilbozdogan@gmail.com</span> |
-                <span
-                    ><a href="https://www.halilbozdogan.com"
-                        >halilbozdogan.com</a
-                    ></span
-                >
-                <br />
-                <span
-                    ><a href="https://github.com/halilbozdogan">GitHub</a></span
-                >
-                |
-                <span
-                    ><a href="https://www.linkedin.com/in/halilbozdogan/"
-                        >LinkedIn</a
-                    ></span
-                >
-            </div>
+            <address class="contact-info">
+                <ul class="contact-list" aria-label="Contact">
+                    <li>Ankara, Turkey</li>
+                    <li>
+                        <a href="mailto:halilbozdogan@gmail.com"
+                            >halilbozdogan@gmail.com</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://www.halilbozdogan.com"
+                            >halilbozdogan.com</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://github.com/halilbozdogan"
+                            >github.com/halilbozdogan</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/halilbozdogan/"
+                            >linkedin.com/in/halilbozdogan</a
+                        >
+                    </li>
+                </ul>
+            </address>
         </header>
 
-        <section>
-            <h2>Summary</h2>
-            <p>
-                Senior DevOps Engineer with over 15 years of experience
-                transitioning from .NET software architecture to cloud-native
-                infrastructure. Expert in modernizing legacy systems, managing
-                high-traffic Kubernetes clusters, and automating complex CI/CD
-                pipelines. Proven track record of bridging the gap between
-                development and operations to improve system reliability,
-                performance, and developer velocity.
-            </p>
-        </section>
+        <main id="content">
+            <section id="summary">
+                <h2>Summary</h2>
+                <p>
+                    Senior DevOps Engineer with over 15 years of experience
+                    transitioning from .NET software architecture to
+                    cloud-native infrastructure. Expert in modernizing legacy
+                    systems, managing high-traffic Kubernetes clusters, and
+                    automating complex CI/CD pipelines. Proven track record of
+                    bridging the gap between development and operations to
+                    improve system reliability, performance, and developer
+                    velocity.
+                </p>
+            </section>
 
-        <section>
-            <h2>Technical Skills</h2>
+            <section id="skills">
+                <h2>Technical Skills</h2>
 
-            <div class="skills-container">
-                <div class="skill-category-label">Development & Core Cloud</div>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <i class="devicon-csharp-plain colored"></i> C# / .NET
+                <div class="skills-container">
+                    <div class="skill-category-label">
+                        Development & Core Cloud
                     </div>
-                    <div class="skill-item">
-                        <i class="devicon-kubernetes-plain colored"></i>
-                        Kubernetes
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i
+                                class="devicon-csharp-plain colored"
+                                aria-hidden="true"
+                            ></i>
+                            C# / .NET
+                        </div>
+                        <div class="skill-item">
+                            <i
+                                class="devicon-kubernetes-plain colored"
+                                aria-hidden="true"
+                            ></i>
+                            Kubernetes
+                        </div>
+                        <div class="skill-item">
+                            <i
+                                class="devicon-docker-plain colored"
+                                aria-hidden="true"
+                            ></i>
+                            Docker
+                        </div>
+                        <div class="skill-item">
+                            <i
+                                class="devicon-azure-plain colored"
+                                aria-hidden="true"
+                            ></i>
+                            Azure
+                        </div>
+                        <div class="skill-item">
+                            <img
+                                src="https://raw.githubusercontent.com/kedacore/keda/refs/heads/main/images/logos/keda-icon-colour.svg"
+                                class="custom-icon"
+                                alt=""
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            KEDA
+                        </div>
+                        <div class="skill-item">
+                            <i
+                                class="devicon-nginx-plain colored"
+                                aria-hidden="true"
+                            ></i>
+                            NGINX
+                        </div>
                     </div>
-                    <div class="skill-item">
-                        <i class="devicon-docker-plain colored"></i> Docker
+
+                    <div class="skill-category-label">
+                        CI/CD & Orchestration
                     </div>
-                    <div class="skill-item">
-                        <i class="devicon-azure-plain colored"></i> Azure
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img
+                                src="https://cdn.simpleicons.org/octopusdeploy/2F93E0"
+                                class="custom-icon"
+                                alt=""
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            Octopus
+                        </div>
+                        <div class="skill-item">
+                            <img
+                                src="https://cdn.simpleicons.org/teamcity/2c3e50"
+                                class="custom-icon"
+                                alt=""
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            TeamCity
+                        </div>
+                        <div class="skill-item">
+                            <i
+                                class="devicon-gitlab-plain colored"
+                                aria-hidden="true"
+                            ></i>
+                            GitLab CI
+                        </div>
+                        <div class="skill-item">
+                            <i
+                                class="devicon-azuredevops-plain colored"
+                                aria-hidden="true"
+                            ></i>
+                            Azure DevOps
+                        </div>
                     </div>
-                    <div class="skill-item">
-                        <img
-                            src="https://raw.githubusercontent.com/kedacore/keda/refs/heads/main/images/logos/keda-icon-colour.svg"
-                            class="custom-icon"
-                            alt="KEDA"
-                        />
-                        KEDA
-                    </div>
-                    <div class="skill-item">
-                        <i class="devicon-nginx-plain colored"></i> NGINX
+
+                    <div class="skill-category-label">Data & Observability</div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i
+                                class="devicon-rabbitmq-plain colored"
+                                aria-hidden="true"
+                            ></i>
+                            RabbitMQ
+                        </div>
+                        <div class="skill-item">
+                            <i
+                                class="devicon-couchbase-plain colored"
+                                aria-hidden="true"
+                            ></i>
+                            Couchbase
+                        </div>
+                        <div class="skill-item">
+                            <i
+                                class="devicon-sonarqube-plain colored"
+                                aria-hidden="true"
+                            ></i>
+                            SonarQube
+                        </div>
+                        <div class="skill-item">
+                            <i
+                                class="devicon-microsoftsqlserver-plain colored"
+                                aria-hidden="true"
+                            ></i>
+                            SQL Server
+                        </div>
+                        <div class="skill-item">
+                            <i
+                                class="devicon-redis-plain colored"
+                                aria-hidden="true"
+                            ></i>
+                            Redis
+                        </div>
+                        <div class="skill-item">
+                            <img
+                                src="https://cdn.simpleicons.org/newrelic/2c3e50"
+                                class="custom-icon"
+                                alt=""
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            New Relic
+                        </div>
+                        <div class="skill-item">
+                            <img
+                                src="https://cdn.simpleicons.org/sentry/2c3e50"
+                                class="custom-icon"
+                                alt=""
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            Sentry
+                        </div>
+                        <div class="skill-item">
+                            <i
+                                class="devicon-prometheus-original colored"
+                                aria-hidden="true"
+                            ></i>
+                            Prometheus
+                        </div>
+                        <div class="skill-item">
+                            <i
+                                class="devicon-elasticsearch-plain colored"
+                                aria-hidden="true"
+                            ></i>
+                            ELK Stack
+                        </div>
                     </div>
                 </div>
+            </section>
 
-                <div class="skill-category-label">CI/CD & Orchestration</div>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <img
-                            src="https://cdn.simpleicons.org/octopusdeploy/2F93E0"
-                            class="custom-icon"
-                            alt="Octopus Deploy"
-                        />
-                        Octopus
-                    </div>
-                    <div class="skill-item">
-                        <img
-                            src="https://cdn.simpleicons.org/teamcity/2c3e50"
-                            class="custom-icon"
-                            alt="TeamCity"
-                        />
-                        TeamCity
-                    </div>
-                    <div class="skill-item">
-                        <i class="devicon-gitlab-plain colored"></i> GitLab CI
-                    </div>
-                    <div class="skill-item">
-                        <i class="devicon-azuredevops-plain colored"></i> Azure
-                        DevOps
-                    </div>
-                </div>
-
-                <div class="skill-category-label">Data & Observability</div>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <i class="devicon-rabbitmq-plain colored"></i> RabbitMQ
-                    </div>
-                    <div class="skill-item">
-                        <i class="devicon-couchbase-plain colored"></i>
-                        Couchbase
-                    </div>
-                    <div class="skill-item">
-                        <i class="devicon-sonarqube-plain colored"></i>
-                        SonarQube
-                    </div>
-                    <div class="skill-item">
-                        <i class="devicon-microsoftsqlserver-plain colored"></i>
-                        SQL Server
-                    </div>
-                    <div class="skill-item">
-                        <i class="devicon-redis-plain colored"></i> Redis
-                    </div>
-                    <div class="skill-item">
-                        <img
-                            src="https://cdn.simpleicons.org/newrelic/2c3e50"
-                            class="custom-icon"
-                            alt="New Relic"
-                        />
-                        New Relic
-                    </div>
-                    <div class="skill-item">
-                        <img
-                            src="https://cdn.simpleicons.org/sentry/2c3e50"
-                            class="custom-icon"
-                            alt="Sentry"
-                        />
-                        Sentry
-                    </div>
-                    <div class="skill-item">
-                        <i class="devicon-prometheus-original colored"></i>
-                        Prometheus
-                    </div>
-                    <div class="skill-item">
-                        <i class="devicon-elasticsearch-plain colored"></i> ELK
-                        Stack
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Certifications</h2>
-            <div class="cert-box">
-                <i class="devicon-kubernetes-plain cert-icon"></i>
-                <div class="cert-details">
-                    <span class="cert-title"
-                        >Certified Kubernetes Administrator (CKA)</span
-                    >
-                    <span class="cert-issuer"
-                        >Cloud Native Computing Foundation (CNCF) — Issued Nov
-                        2024</span
-                    >
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Experience</h2>
-
-            <div class="job">
-                <div class="job-header">
-                    <div>
-                        <span class="job-title">Senior DevOps Engineer</span> —
-                        <span class="company">Nesine</span>
-                    </div>
-                    <span class="date">May 2023 – Present</span>
-                </div>
-                <span class="company-desc"
-                    >Turkey's Leading Legal Online Betting & Gaming
-                    Platform</span
-                >
-
-                <div class="highlight-box">
-                    <span class="highlight-title"
-                        >Key Challenge: Mission-Critical Scale</span
-                    >
-                    I orchestrated the 24/7 zero-downtime infrastructure for
-                    Turkey's largest betting platform, ensuring 99.99%
-                    availability and real-time data consistency with minimal
-                    latency during high-traffic live sports events.
-                </div>
-
-                <div class="job-desc">
-                    <ul>
-                        <li>
-                            <strong>Advanced Autoscaling:</strong> Implemented
-                            <strong>KEDA</strong> for event-driven autoscaling,
-                            configuring dynamic pod scaling based on
-                            <strong>RabbitMQ</strong> queue depth and custom
-                            <strong>ASP.NET Core</strong> metrics.
-                        </li>
-                        <li>
-                            <strong>Kubernetes Migration:</strong> Led the full
-                            migration from VM-based deployments to Kubernetes
-                            using Docker Buildx (Bake), Octopus Deploy, and
-                            TeamCity.
-                        </li>
-                        <li>
-                            <strong>High-Scale Operations:</strong> Managed
-                            resilient infrastructure ensuring uninterrupted
-                            service for millions of transactions during
-                            high-concurrency windows.
-                        </li>
-                        <li>
-                            <strong>CI/CD Architecture:</strong> Implemented
-                            Octopus Kubernetes Agents and GitLab Kubernetes
-                            Runners for isolated build execution.
-                        </li>
-                        <li>
-                            <strong>Observability:</strong> Developed New Relic
-                            dashboards for real-time system visibility and
-                            deployed self-hosted Sentry for frontend monitoring.
-                        </li>
-                        <li>
-                            <strong>Tooling:</strong> Built a Blazor-based
-                            internal application to monitor Octopus/TeamCity
-                            pipelines and deployed custom NGINX reverse-proxies
-                            for centralized logging and caching.
-                        </li>
-                        <li>
-                            <strong>Code Quality:</strong> Deployed and managed
-                            <strong>SonarQube</strong> instances, integrating
-                            them into CI/CD pipelines to enforce quality gates
-                            and static analysis automatically.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <br />
-
-            <div class="job">
-                <div class="job-header">
-                    <div>
-                        <span class="job-title">Senior Software Engineer</span>
-                        — <span class="company">Enocta</span>
-                    </div>
-                    <span class="date">Jul 2022 – Apr 2023</span>
-                </div>
-                <span class="company-desc"
-                    >Turkey's Sector Leader in LMS & Digital Learning
-                    Solutions</span
-                >
-                <div class="job-desc">
-                    <ul>
-                        <li>
-                            Identified and resolved performance bottlenecks in
-                            core Web API services.
-                        </li>
-                        <li>
-                            Designed multi-timezone operational features for
-                            international users.
-                        </li>
-                        <li>
-                            Migrated source control from TFS to Git and
-                            implemented Azure DevOps pipelines.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <br />
-
-            <div class="job">
-                <div class="job-header">
-                    <div>
-                        <span class="job-title">Senior Software Engineer</span>
-                        — <span class="company">Tiga Bilgi Teknolojileri</span>
-                    </div>
-                    <span class="date">Dec 2015 – Jul 2022</span>
-                </div>
-                <span class="company-desc"
-                    >Global HealthTech Provider Specializing in National-Scale
-                    Digital Health Solutions</span
-                >
-
-                <div class="highlight-box">
-                    <span class="highlight-title"
-                        >Key Project: National Health System (e-Nabiz)</span
-                    >
-                    Architected the backend for Turkey's Personal Health Record
-                    System, serving 6 million+ patients. Managed Couchbase
-                    clusters (>20TB data) and handled 1M+ daily requests.
-                </div>
-
-                <div class="job-desc">
-                    <ul>
-                        <li>
-                            <strong>Modernization:</strong> Led containerization
-                            of legacy Windows Service applications to Kubernetes
-                            (MetalLB, NGINX-Ingress, Harbor).
-                        </li>
-                        <li>
-                            <strong>Code Quality Assurance:</strong> Deployed
-                            and maintained <strong>SonarQube</strong> servers to
-                            perform continuous inspection of code quality and
-                            security vulnerabilities across public sector
-                            projects.
-                        </li>
-                        <li>
-                            <strong>System Integration:</strong> Designed
-                            fault-tolerant integrations for diagnostic imaging
-                            and external systems.
-                        </li>
-                        <li>
-                            <strong>Software Evolution:</strong> Modernized .NET
-                            Core apps from 2.x to LTS versions and refactoring
-                            complex codebases.
-                        </li>
-                        <li>
-                            <strong>DevOps Implementation:</strong> Established
-                            CI/CD workflows using TFS and on-premises Kubernetes
-                            clusters.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <br />
-
-            <div class="job">
-                <div class="job-header">
-                    <div>
-                        <span class="job-title">Senior Software Engineer</span>
-                        — <span class="company">CLF IT Consulting</span>
-                    </div>
-                    <span class="date">Apr 2014 – Oct 2015</span>
-                </div>
-                <span class="company-desc"
-                    >Defense & Security Technology Consultancy</span
-                >
-                <div class="job-desc">
-                    <ul>
-                        <li>
-                            Developed a high-performance non-blocking web server
-                            for custom messaging integrations.
-                        </li>
-                        <li>
-                            Collaborated on resilient systems for classified
-                            military projects (Security Clearance obtained).
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <br />
-
-            <div class="job">
-                <div class="job-header">
-                    <div>
-                        <span class="job-title">Software Engineer</span> —
-                        <span class="company">Anadolu Agency</span>
-                    </div>
-                    <span class="date">Dec 2013 – Feb 2014</span>
-                </div>
-                <span class="company-desc"
-                    >Turkey's Global News Agency & Information Network</span
-                >
-                <div class="job-desc">
-                    <ul>
-                        <li>
-                            Designed Windows/Web services to integrate
-                            third-party systems into national news
-                            infrastructure.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <br />
-
-            <div class="job">
-                <div class="job-header">
-                    <div>
-                        <span class="job-title"
-                            >Application Development Consultant</span
+            <section id="certifications">
+                <h2>Certifications</h2>
+                <div class="cert-box">
+                    <i
+                        class="devicon-kubernetes-plain cert-icon"
+                        aria-hidden="true"
+                    ></i>
+                    <div class="cert-details">
+                        <span class="cert-title"
+                            >Certified Kubernetes Administrator (CKA)</span
                         >
-                        — <span class="company">Innova</span>
+                        <span class="cert-issuer"
+                            >Cloud Native Computing Foundation (CNCF) — Issued
+                            Nov 2024</span
+                        >
                     </div>
-                    <span class="date">Sep 2008 – Dec 2013</span>
                 </div>
-                <span class="company-desc"
-                    >Leading Systems Integrator & Software Solutions Provider
-                    (Türk Telekom Subsidiary)</span
-                >
-                <div class="job-desc">
-                    <ul>
-                        <li>
-                            Conducted requirements analysis and system design
-                            for enterprise applications.
-                        </li>
-                        <li>
-                            Developed shared frameworks to optimize legacy
-                            libraries and performance.
-                        </li>
-                        <li>
-                            Mentored interns and junior developers on coding
-                            standards and best practices.
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            </section>
 
-            <br />
+            <section id="experience">
+                <h2>Experience</h2>
 
-            <div class="job">
-                <div class="job-header">
-                    <div>
-                        <span class="job-title">System Support Chief</span> —
-                        <span class="company">Demir Export A.S.</span>
+                <article class="job">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">
+                                Senior DevOps Engineer —
+                                <span class="company">Nesine</span>
+                            </h3>
+                        </div>
+                        <span class="date"
+                            ><time datetime="2023-05">May 2023</time> –
+                            <time datetime="9999-12">Present</time></span
+                        >
                     </div>
-                    <span class="date">Oct 2007 – Aug 2008</span>
-                </div>
-                <span class="company-desc"
-                    >Major Mining & Industrial Company (Koç Holding)</span
-                >
-                <div class="job-desc">
-                    <ul>
-                        <li>
-                            Administered Windows Server and Active Directory
-                            infrastructure.
-                        </li>
-                        <li>
-                            Deployed and customized SharePoint-based
-                            collaboration environments.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+                    <span class="company-desc"
+                        >Turkey's Leading Legal Online Betting & Gaming
+                        Platform</span
+                    >
 
-        <section>
-            <h2>Selected Projects</h2>
-            <ul>
-                <li>
-                    <strong>Turkey Scholarships System (2016):</strong> Built
-                    Azure Cloud architecture handling 150,000
-                    applications/month.
-                </li>
-                <li>
-                    <strong>Ministry of Youth & Sports (2019):</strong>
-                    Digitized ministry operations and optimized legacy code
-                    performance.
-                </li>
-                <li>
-                    <strong>Central Bank Integration (2014):</strong> Parsed
-                    Reuters RS232 serial messages for financial data portals.
-                </li>
-            </ul>
-        </section>
+                    <div class="highlight-box">
+                        <span class="highlight-title"
+                            >Key Challenge: Mission-Critical Scale</span
+                        >
+                        I orchestrated the 24/7 zero-downtime infrastructure for
+                        Turkey's largest betting platform, ensuring 99.99%
+                        availability and real-time data consistency with minimal
+                        latency during high-traffic live sports events.
+                    </div>
 
-        <section>
-            <h2>Education</h2>
-            <p>
-                <strong>Hacettepe University</strong> — Computer Education and
-                Instructional Technologies<br />
-                <span class="date">Dec 2001 – Dec 2005 | GPA: 3.13 / 4.0</span>
-            </p>
-        </section>
+                    <div class="job-desc">
+                        <ul>
+                            <li>
+                                <strong>Advanced Autoscaling:</strong>
+                                Implemented <strong>KEDA</strong> for
+                                event-driven autoscaling, configuring dynamic
+                                pod scaling based on
+                                <strong>RabbitMQ</strong> queue depth and custom
+                                <strong>ASP.NET Core</strong> metrics.
+                            </li>
+                            <li>
+                                <strong>Kubernetes Migration:</strong> Led the
+                                full migration from VM-based deployments to
+                                Kubernetes using Docker Buildx (Bake), Octopus
+                                Deploy, and TeamCity.
+                            </li>
+                            <li>
+                                <strong>High-Scale Operations:</strong> Managed
+                                resilient infrastructure ensuring uninterrupted
+                                service for millions of transactions during
+                                high-concurrency windows.
+                            </li>
+                            <li>
+                                <strong>CI/CD Architecture:</strong> Implemented
+                                Octopus Kubernetes Agents and GitLab Kubernetes
+                                Runners for isolated build execution.
+                            </li>
+                            <li>
+                                <strong>Observability:</strong> Developed New
+                                Relic dashboards for real-time system visibility
+                                and deployed self-hosted Sentry for frontend
+                                monitoring.
+                            </li>
+                            <li>
+                                <strong>Tooling:</strong> Built a Blazor-based
+                                internal application to monitor Octopus/TeamCity
+                                pipelines and deployed custom NGINX
+                                reverse-proxies for centralized logging and
+                                caching.
+                            </li>
+                            <li>
+                                <strong>Code Quality:</strong> Deployed and
+                                managed <strong>SonarQube</strong> instances,
+                                integrating them into CI/CD pipelines to enforce
+                                quality gates and static analysis automatically.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="job">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">
+                                Senior Software Engineer —
+                                <span class="company">Enocta</span>
+                            </h3>
+                        </div>
+                        <span class="date"
+                            ><time datetime="2022-07">Jul 2022</time> –
+                            <time datetime="2023-04">Apr 2023</time></span
+                        >
+                    </div>
+                    <span class="company-desc"
+                        >Turkey's Sector Leader in LMS & Digital Learning
+                        Solutions</span
+                    >
+                    <div class="job-desc">
+                        <ul>
+                            <li>
+                                Identified and resolved performance bottlenecks
+                                in core Web API services.
+                            </li>
+                            <li>
+                                Designed multi-timezone operational features for
+                                international users.
+                            </li>
+                            <li>
+                                Migrated source control from TFS to Git and
+                                implemented Azure DevOps pipelines.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="job">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">
+                                Senior Software Engineer —
+                                <span class="company"
+                                    >Tiga Bilgi Teknolojileri</span
+                                >
+                            </h3>
+                        </div>
+                        <span class="date"
+                            ><time datetime="2015-12">Dec 2015</time> –
+                            <time datetime="2022-07">Jul 2022</time></span
+                        >
+                    </div>
+                    <span class="company-desc"
+                        >Global HealthTech Provider Specializing in
+                        National-Scale Digital Health Solutions</span
+                    >
+
+                    <div class="highlight-box">
+                        <span class="highlight-title"
+                            >Key Project: National Health System (e-Nabiz)</span
+                        >
+                        Architected the backend for Turkey's Personal Health
+                        Record System, serving 6 million+ patients. Managed
+                        Couchbase clusters (>20TB data) and handled 1M+ daily
+                        requests.
+                    </div>
+
+                    <div class="job-desc">
+                        <ul>
+                            <li>
+                                <strong>Modernization:</strong> Led
+                                containerization of legacy Windows Service
+                                applications to Kubernetes (MetalLB,
+                                NGINX-Ingress, Harbor).
+                            </li>
+                            <li>
+                                <strong>Code Quality Assurance:</strong>
+                                Deployed and maintained
+                                <strong>SonarQube</strong> servers to perform
+                                continuous inspection of code quality and
+                                security vulnerabilities across public sector
+                                projects.
+                            </li>
+                            <li>
+                                <strong>System Integration:</strong> Designed
+                                fault-tolerant integrations for diagnostic
+                                imaging and external systems.
+                            </li>
+                            <li>
+                                <strong>Software Evolution:</strong> Modernized
+                                .NET Core apps from 2.x to LTS versions and
+                                refactoring complex codebases.
+                            </li>
+                            <li>
+                                <strong>DevOps Implementation:</strong>
+                                Established CI/CD workflows using TFS and
+                                on-premises Kubernetes clusters.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="job">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">
+                                Senior Software Engineer —
+                                <span class="company">CLF IT Consulting</span>
+                            </h3>
+                        </div>
+                        <span class="date"
+                            ><time datetime="2014-04">Apr 2014</time> –
+                            <time datetime="2015-10">Oct 2015</time></span
+                        >
+                    </div>
+                    <span class="company-desc"
+                        >Defense & Security Technology Consultancy</span
+                    >
+                    <div class="job-desc">
+                        <ul>
+                            <li>
+                                Developed a high-performance non-blocking web
+                                server for custom messaging integrations.
+                            </li>
+                            <li>
+                                Collaborated on resilient systems for classified
+                                military projects (Security Clearance obtained).
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="job">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">
+                                Software Engineer —
+                                <span class="company">Anadolu Agency</span>
+                            </h3>
+                        </div>
+                        <span class="date"
+                            ><time datetime="2013-12">Dec 2013</time> –
+                            <time datetime="2014-02">Feb 2014</time></span
+                        >
+                    </div>
+                    <span class="company-desc"
+                        >Turkey's Global News Agency & Information Network</span
+                    >
+                    <div class="job-desc">
+                        <ul>
+                            <li>
+                                Designed Windows/Web services to integrate
+                                third-party systems into national news
+                                infrastructure.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="job">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">
+                                Application Development Consultant —
+                                <span class="company">Innova</span>
+                            </h3>
+                        </div>
+                        <span class="date"
+                            ><time datetime="2008-09">Sep 2008</time> –
+                            <time datetime="2013-12">Dec 2013</time></span
+                        >
+                    </div>
+                    <span class="company-desc"
+                        >Leading Systems Integrator & Software Solutions
+                        Provider (Türk Telekom Subsidiary)</span
+                    >
+                    <div class="job-desc">
+                        <ul>
+                            <li>
+                                Conducted requirements analysis and system
+                                design for enterprise applications.
+                            </li>
+                            <li>
+                                Developed shared frameworks to optimize legacy
+                                libraries and performance.
+                            </li>
+                            <li>
+                                Mentored interns and junior developers on coding
+                                standards and best practices.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="job">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">
+                                System Support Chief —
+                                <span class="company">Demir Export A.S.</span>
+                            </h3>
+                        </div>
+                        <span class="date"
+                            ><time datetime="2007-10">Oct 2007</time> –
+                            <time datetime="2008-08">Aug 2008</time></span
+                        >
+                    </div>
+                    <span class="company-desc"
+                        >Major Mining & Industrial Company (Koç Holding)</span
+                    >
+                    <div class="job-desc">
+                        <ul>
+                            <li>
+                                Administered Windows Server and Active Directory
+                                infrastructure.
+                            </li>
+                            <li>
+                                Deployed and customized SharePoint-based
+                                collaboration environments.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+
+            <section id="projects">
+                <h2>Selected Projects</h2>
+                <ul>
+                    <li>
+                        <strong>Turkey Scholarships System (2016):</strong>
+                        Built Azure Cloud architecture handling 150,000
+                        applications/month.
+                    </li>
+                    <li>
+                        <strong>Ministry of Youth & Sports (2019):</strong>
+                        Digitized ministry operations and optimized legacy code
+                        performance.
+                    </li>
+                    <li>
+                        <strong>Central Bank Integration (2014):</strong> Parsed
+                        Reuters RS232 serial messages for financial data
+                        portals.
+                    </li>
+                </ul>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <p>
+                    <strong>Hacettepe University</strong> — Computer Education
+                    and Instructional Technologies<br />
+                    <span class="date"
+                        ><time datetime="2001-12">Dec 2001</time> –
+                        <time datetime="2005-12">Dec 2005</time> | GPA: 3.13 /
+                        4.0</span
+                    >
+                </p>
+            </section>
+        </main>
 
         <div class="no-print">
-            <button class="btn-print" onclick="window.print()">
+            <button class="btn-print" type="button" onclick="window.print()">
                 Download / Print as PDF
             </button>
         </div>
