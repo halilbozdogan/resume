@@ -1,0 +1,807 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Halil Bozdogan - CV</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+        />
+        <style>
+            /* --- CSS VARIABLES (Light Mode Default) --- */
+            :root {
+                --body-bg: #ffffff;
+                --primary: #2c3e50; /* Headings */
+                --secondary: #34495e; /* Subtitles */
+                --accent: #2980b9; /* Links/Company Names */
+                --text: #333333; /* Body Text */
+                --light-bg: #f8f9fa; /* Skill Boxes */
+                --border-color: #eeeeee; /* Separators */
+
+                /* Highlight Box Colors */
+                --box-bg: #f0f7fb;
+                --box-border: #e1e8ed;
+
+                /* Cert Box Colors */
+                --cert-bg: #f0f7fb;
+                --cert-border: #e1e8ed;
+            }
+
+            /* --- DARK MODE OVERRIDES --- */
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --body-bg: #121212;
+                    --primary: #ecf0f1; /* Bright White/Gray */
+                    --secondary: #bdc3c7; /* Lighter Gray */
+                    --accent: #5dade2; /* Brighter Blue for contrast */
+                    --text: #e0e0e0; /* Off-white text */
+                    --light-bg: #1e272e; /* Dark Gray for Skill Boxes */
+                    --border-color: #333333; /* Dark separators */
+
+                    /* Highlight Box Colors (Dark) */
+                    --box-bg: #1a2634;
+                    --box-border: #2c3e50;
+
+                    /* Cert Box Colors (Dark) */
+                    --cert-bg: #1a2634;
+                    --cert-border: #2c3e50;
+                }
+                /* Slight adjustment for KEDA/TeamCity icons if they have black text */
+                .skill-item img {
+                    filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.2));
+                }
+            }
+
+            body {
+                font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                line-height: 1.6;
+                color: var(--text);
+                background-color: var(--body-bg);
+                max-width: 950px;
+                margin: 0 auto;
+                padding: 40px 20px;
+                transition:
+                    background-color 0.3s ease,
+                    color 0.3s ease;
+            }
+
+            a {
+                color: var(--accent);
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+
+            /* Header */
+            header {
+                text-align: center;
+                margin-bottom: 40px;
+                border-bottom: 2px solid var(--border-color);
+                padding-bottom: 20px;
+            }
+            h1 {
+                margin: 0;
+                color: var(--primary);
+                font-size: 2.5em;
+            }
+            .subtitle {
+                font-size: 1.2em;
+                color: var(--secondary);
+                margin-top: 5px;
+                font-weight: 500;
+            }
+            .contact-info {
+                margin-top: 15px;
+                font-size: 0.95em;
+            }
+            .contact-info span {
+                margin: 0 8px;
+            }
+
+            /* Sections */
+            section {
+                margin-bottom: 35px;
+            }
+            h2 {
+                color: var(--primary);
+                border-bottom: 1px solid var(--border-color);
+                padding-bottom: 8px;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                font-size: 1.1em;
+                letter-spacing: 1px;
+            }
+
+            /* Skills Grid with Logos */
+            .skills-container {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+            .skill-category-label {
+                font-size: 0.9em;
+                color: var(--secondary);
+                font-weight: 700;
+                margin-bottom: 5px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+            .skills-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+                gap: 15px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .skill-item {
+                background: var(--light-bg);
+                padding: 12px;
+                border-radius: 8px;
+                font-size: 0.85em;
+                font-weight: 600;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                transition:
+                    transform 0.2s ease,
+                    background-color 0.3s ease;
+                border: 1px solid transparent;
+                color: var(--text);
+            }
+            .skill-item:hover {
+                transform: translateY(-2px);
+                border-color: var(--border-color);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            }
+
+            /* Icon Styling */
+            .skill-item i {
+                font-size: 2.2em;
+            }
+            .custom-icon {
+                width: 35px;
+                height: 35px;
+                object-fit: contain;
+            }
+            .colored {
+                color: inherit;
+            }
+
+            /* Certification Box */
+            .cert-box {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                background: var(--cert-bg);
+                border: 1px solid var(--cert-border);
+                padding: 15px 20px;
+                border-radius: 8px;
+                transition: background-color 0.3s ease;
+            }
+            .cert-icon {
+                font-size: 2.5em;
+                color: #326ce5;
+            } /* Kubernetes Blue */
+            .cert-details {
+                display: flex;
+                flex-direction: column;
+            }
+            .cert-title {
+                font-weight: bold;
+                font-size: 1.1em;
+                color: var(--primary);
+            }
+            .cert-issuer {
+                font-size: 0.9em;
+                color: var(--secondary);
+            }
+
+            /* Experience */
+            .job-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                margin-bottom: 2px;
+            }
+            .job-title {
+                font-weight: bold;
+                font-size: 1.1em;
+                color: var(--primary);
+            }
+            .company {
+                color: var(--accent);
+                font-weight: 600;
+            }
+            .company-desc {
+                display: block;
+                font-size: 0.9em;
+                color: var(--secondary);
+                font-style: italic;
+                margin-bottom: 8px;
+            }
+            .date {
+                color: var(--secondary);
+                font-size: 0.9em;
+            }
+            .job-desc {
+                margin-top: 5px;
+            }
+            ul {
+                margin-top: 8px;
+                padding-left: 20px;
+            }
+            li {
+                margin-bottom: 6px;
+            }
+
+            /* Highlight Box for Main Projects */
+            .highlight-box {
+                background: var(--box-bg);
+                border-left: 4px solid var(--accent);
+                padding: 15px;
+                margin: 15px 0 25px 0;
+                border-radius: 0 4px 4px 0;
+                transition: background-color 0.3s ease;
+            }
+            .highlight-title {
+                font-weight: bold;
+                display: block;
+                margin-bottom: 5px;
+                color: var(--secondary);
+            }
+
+            /* Footer/Print Button */
+            .no-print {
+                text-align: center;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            .btn-print {
+                background: var(--accent);
+                color: white;
+                border: none;
+                padding: 12px 25px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 1em;
+                font-weight: bold;
+            }
+            .btn-print:hover {
+                opacity: 0.9;
+            }
+
+            /* --- PRINT STYLES (Always White) --- */
+            @media print {
+                body {
+                    max-width: 100%;
+                    padding: 0;
+                    background-color: #fff;
+                    color: #000;
+                    -webkit-print-color-adjust: exact;
+                }
+                .no-print {
+                    display: none;
+                }
+                a {
+                    text-decoration: none;
+                    color: #000;
+                }
+                .skill-item,
+                .cert-box {
+                    border: 1px solid #eee;
+                    break-inside: avoid;
+                    background: #fff;
+                    color: #000;
+                }
+                .highlight-box {
+                    background: #fff !important;
+                    border: 1px solid #ccc;
+                    border-left: 4px solid #333 !important;
+                }
+
+                /* Force Headers Black */
+                h1,
+                h2,
+                .job-title,
+                .cert-title {
+                    color: #000;
+                }
+                .subtitle,
+                .company-desc,
+                .cert-issuer,
+                .date {
+                    color: #444;
+                }
+                header,
+                h2 {
+                    border-bottom-color: #ccc;
+                }
+            }
+
+            /* Mobile Tweak */
+            @media (max-width: 600px) {
+                .skills-grid {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+                .job-header {
+                    flex-direction: column;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Halil Bozdogan</h1>
+            <div class="subtitle">Senior Software / DevOps Engineer</div>
+            <div class="contact-info">
+                <span>Ankara, Turkey</span> |
+                <span>halilbozdogan@gmail.com</span> |
+                <span
+                    ><a href="https://www.halilbozdogan.com"
+                        >halilbozdogan.com</a
+                    ></span
+                >
+                <br />
+                <span
+                    ><a href="https://github.com/halilbozdogan">GitHub</a></span
+                >
+                |
+                <span
+                    ><a href="https://www.linkedin.com/in/halilbozdogan/"
+                        >LinkedIn</a
+                    ></span
+                >
+            </div>
+        </header>
+
+        <section>
+            <h2>Summary</h2>
+            <p>
+                Senior DevOps Engineer with over 15 years of experience
+                transitioning from .NET software architecture to cloud-native
+                infrastructure. Expert in modernizing legacy systems, managing
+                high-traffic Kubernetes clusters, and automating complex CI/CD
+                pipelines. Proven track record of bridging the gap between
+                development and operations to improve system reliability,
+                performance, and developer velocity.
+            </p>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+
+            <div class="skills-container">
+                <div class="skill-category-label">Development & Core Cloud</div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="devicon-csharp-plain colored"></i> C# / .NET
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-kubernetes-plain colored"></i>
+                        Kubernetes
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-docker-plain colored"></i> Docker
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-azure-plain colored"></i> Azure
+                    </div>
+                    <div class="skill-item">
+                        <img
+                            src="https://raw.githubusercontent.com/kedacore/keda/refs/heads/main/images/logos/keda-icon-colour.svg"
+                            class="custom-icon"
+                            alt="KEDA"
+                        />
+                        KEDA
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-nginx-plain colored"></i> NGINX
+                    </div>
+                </div>
+
+                <div class="skill-category-label">CI/CD & Orchestration</div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img
+                            src="https://cdn.simpleicons.org/octopusdeploy/2F93E0"
+                            class="custom-icon"
+                            alt="Octopus Deploy"
+                        />
+                        Octopus
+                    </div>
+                    <div class="skill-item">
+                        <img
+                            src="https://cdn.simpleicons.org/teamcity/2c3e50"
+                            class="custom-icon"
+                            alt="TeamCity"
+                        />
+                        TeamCity
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-gitlab-plain colored"></i> GitLab CI
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-azuredevops-plain colored"></i> Azure
+                        DevOps
+                    </div>
+                </div>
+
+                <div class="skill-category-label">Data & Observability</div>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="devicon-rabbitmq-plain colored"></i> RabbitMQ
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-couchbase-plain colored"></i>
+                        Couchbase
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-sonarqube-plain colored"></i>
+                        SonarQube
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-microsoftsqlserver-plain colored"></i>
+                        SQL Server
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-redis-plain colored"></i> Redis
+                    </div>
+                    <div class="skill-item">
+                        <img
+                            src="https://cdn.simpleicons.org/newrelic/2c3e50"
+                            class="custom-icon"
+                            alt="New Relic"
+                        />
+                        New Relic
+                    </div>
+                    <div class="skill-item">
+                        <img
+                            src="https://cdn.simpleicons.org/sentry/2c3e50"
+                            class="custom-icon"
+                            alt="Sentry"
+                        />
+                        Sentry
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-prometheus-original colored"></i>
+                        Prometheus
+                    </div>
+                    <div class="skill-item">
+                        <i class="devicon-elasticsearch-plain colored"></i> ELK
+                        Stack
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <div class="cert-box">
+                <i class="devicon-kubernetes-plain cert-icon"></i>
+                <div class="cert-details">
+                    <span class="cert-title"
+                        >Certified Kubernetes Administrator (CKA)</span
+                    >
+                    <span class="cert-issuer"
+                        >Cloud Native Computing Foundation (CNCF) — Issued Nov
+                        2024</span
+                    >
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Experience</h2>
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Senior DevOps Engineer</span> —
+                        <span class="company">Nesine</span>
+                    </div>
+                    <span class="date">May 2023 – Present</span>
+                </div>
+                <span class="company-desc"
+                    >Turkey's Leading Legal Online Betting & Gaming
+                    Platform</span
+                >
+
+                <div class="highlight-box">
+                    <span class="highlight-title"
+                        >Key Challenge: Mission-Critical Scale</span
+                    >
+                    I orchestrated the 24/7 zero-downtime infrastructure for
+                    Turkey's largest betting platform, ensuring 99.99%
+                    availability and real-time data consistency with minimal
+                    latency during high-traffic live sports events.
+                </div>
+
+                <div class="job-desc">
+                    <ul>
+                        <li>
+                            <strong>Advanced Autoscaling:</strong> Implemented
+                            <strong>KEDA</strong> for event-driven autoscaling,
+                            configuring dynamic pod scaling based on
+                            <strong>RabbitMQ</strong> queue depth and custom
+                            <strong>ASP.NET Core</strong> metrics.
+                        </li>
+                        <li>
+                            <strong>Kubernetes Migration:</strong> Led the full
+                            migration from VM-based deployments to Kubernetes
+                            using Docker Buildx (Bake), Octopus Deploy, and
+                            TeamCity.
+                        </li>
+                        <li>
+                            <strong>High-Scale Operations:</strong> Managed
+                            resilient infrastructure ensuring uninterrupted
+                            service for millions of transactions during
+                            high-concurrency windows.
+                        </li>
+                        <li>
+                            <strong>CI/CD Architecture:</strong> Implemented
+                            Octopus Kubernetes Agents and GitLab Kubernetes
+                            Runners for isolated build execution.
+                        </li>
+                        <li>
+                            <strong>Observability:</strong> Developed New Relic
+                            dashboards for real-time system visibility and
+                            deployed self-hosted Sentry for frontend monitoring.
+                        </li>
+                        <li>
+                            <strong>Tooling:</strong> Built a Blazor-based
+                            internal application to monitor Octopus/TeamCity
+                            pipelines and deployed custom NGINX reverse-proxies
+                            for centralized logging and caching.
+                        </li>
+                        <li>
+                            <strong>Code Quality:</strong> Deployed and managed
+                            <strong>SonarQube</strong> instances, integrating
+                            them into CI/CD pipelines to enforce quality gates
+                            and static analysis automatically.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <br />
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Senior Software Engineer</span>
+                        — <span class="company">Enocta</span>
+                    </div>
+                    <span class="date">Jul 2022 – Apr 2023</span>
+                </div>
+                <span class="company-desc"
+                    >Turkey's Sector Leader in LMS & Digital Learning
+                    Solutions</span
+                >
+                <div class="job-desc">
+                    <ul>
+                        <li>
+                            Identified and resolved performance bottlenecks in
+                            core Web API services.
+                        </li>
+                        <li>
+                            Designed multi-timezone operational features for
+                            international users.
+                        </li>
+                        <li>
+                            Migrated source control from TFS to Git and
+                            implemented Azure DevOps pipelines.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <br />
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Senior Software Engineer</span>
+                        — <span class="company">Tiga Bilgi Teknolojileri</span>
+                    </div>
+                    <span class="date">Dec 2015 – Jul 2022</span>
+                </div>
+                <span class="company-desc"
+                    >Global HealthTech Provider Specializing in National-Scale
+                    Digital Health Solutions</span
+                >
+
+                <div class="highlight-box">
+                    <span class="highlight-title"
+                        >Key Project: National Health System (e-Nabiz)</span
+                    >
+                    Architected the backend for Turkey's Personal Health Record
+                    System, serving 6 million+ patients. Managed Couchbase
+                    clusters (>20TB data) and handled 1M+ daily requests.
+                </div>
+
+                <div class="job-desc">
+                    <ul>
+                        <li>
+                            <strong>Modernization:</strong> Led containerization
+                            of legacy Windows Service applications to Kubernetes
+                            (MetalLB, NGINX-Ingress, Harbor).
+                        </li>
+                        <li>
+                            <strong>Code Quality Assurance:</strong> Deployed
+                            and maintained <strong>SonarQube</strong> servers to
+                            perform continuous inspection of code quality and
+                            security vulnerabilities across public sector
+                            projects.
+                        </li>
+                        <li>
+                            <strong>System Integration:</strong> Designed
+                            fault-tolerant integrations for diagnostic imaging
+                            and external systems.
+                        </li>
+                        <li>
+                            <strong>Software Evolution:</strong> Modernized .NET
+                            Core apps from 2.x to LTS versions and refactoring
+                            complex codebases.
+                        </li>
+                        <li>
+                            <strong>DevOps Implementation:</strong> Established
+                            CI/CD workflows using TFS and on-premises Kubernetes
+                            clusters.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <br />
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Senior Software Engineer</span>
+                        — <span class="company">CLF IT Consulting</span>
+                    </div>
+                    <span class="date">Apr 2014 – Oct 2015</span>
+                </div>
+                <span class="company-desc"
+                    >Defense & Security Technology Consultancy</span
+                >
+                <div class="job-desc">
+                    <ul>
+                        <li>
+                            Developed a high-performance non-blocking web server
+                            for custom messaging integrations.
+                        </li>
+                        <li>
+                            Collaborated on resilient systems for classified
+                            military projects (Security Clearance obtained).
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <br />
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">Software Engineer</span> —
+                        <span class="company">Anadolu Agency</span>
+                    </div>
+                    <span class="date">Dec 2013 – Feb 2014</span>
+                </div>
+                <span class="company-desc"
+                    >Turkey's Global News Agency & Information Network</span
+                >
+                <div class="job-desc">
+                    <ul>
+                        <li>
+                            Designed Windows/Web services to integrate
+                            third-party systems into national news
+                            infrastructure.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <br />
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title"
+                            >Application Development Consultant</span
+                        >
+                        — <span class="company">Innova</span>
+                    </div>
+                    <span class="date">Sep 2008 – Dec 2013</span>
+                </div>
+                <span class="company-desc"
+                    >Leading Systems Integrator & Software Solutions Provider
+                    (Türk Telekom Subsidiary)</span
+                >
+                <div class="job-desc">
+                    <ul>
+                        <li>
+                            Conducted requirements analysis and system design
+                            for enterprise applications.
+                        </li>
+                        <li>
+                            Developed shared frameworks to optimize legacy
+                            libraries and performance.
+                        </li>
+                        <li>
+                            Mentored interns and junior developers on coding
+                            standards and best practices.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <br />
+
+            <div class="job">
+                <div class="job-header">
+                    <div>
+                        <span class="job-title">System Support Chief</span> —
+                        <span class="company">Demir Export A.S.</span>
+                    </div>
+                    <span class="date">Oct 2007 – Aug 2008</span>
+                </div>
+                <span class="company-desc"
+                    >Major Mining & Industrial Company (Koç Holding)</span
+                >
+                <div class="job-desc">
+                    <ul>
+                        <li>
+                            Administered Windows Server and Active Directory
+                            infrastructure.
+                        </li>
+                        <li>
+                            Deployed and customized SharePoint-based
+                            collaboration environments.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Selected Projects</h2>
+            <ul>
+                <li>
+                    <strong>Turkey Scholarships System (2016):</strong> Built
+                    Azure Cloud architecture handling 150,000
+                    applications/month.
+                </li>
+                <li>
+                    <strong>Ministry of Youth & Sports (2019):</strong>
+                    Digitized ministry operations and optimized legacy code
+                    performance.
+                </li>
+                <li>
+                    <strong>Central Bank Integration (2014):</strong> Parsed
+                    Reuters RS232 serial messages for financial data portals.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <p>
+                <strong>Hacettepe University</strong> — Computer Education and
+                Instructional Technologies<br />
+                <span class="date">Dec 2001 – Dec 2005 | GPA: 3.13 / 4.0</span>
+            </p>
+        </section>
+
+        <div class="no-print">
+            <button class="btn-print" onclick="window.print()">
+                Download / Print as PDF
+            </button>
+        </div>
+    </body>
+</html>
