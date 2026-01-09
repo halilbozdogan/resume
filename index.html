@@ -339,8 +339,8 @@
                     color: #000;
                     -webkit-print-color-adjust: exact;
                     print-color-adjust: exact;
-                    font-size: 0.95em;
-                    line-height: 1.45;
+                    font-size: 1em;
+                    line-height: 1.5;
                 }
                 header {
                     margin-bottom: 24px;
@@ -357,7 +357,7 @@
                     font-size: 0.85em;
                 }
                 section {
-                    margin-bottom: 20px;
+                    margin-bottom: 24px;
                     break-before: auto;
                     break-after: auto;
                     page-break-before: auto;
@@ -367,6 +367,7 @@
                     margin-bottom: 12px;
                     padding-bottom: 6px;
                     font-size: 0.95em;
+                    break-after: avoid;
                 }
                 .no-print {
                     display: none !important;
@@ -435,6 +436,29 @@
                 header,
                 h2 {
                     border-bottom-color: #ccc;
+                }
+
+                #summary,
+                #skills,
+                #certifications {
+                    break-inside: avoid;
+                }
+
+                #experience {
+                    break-before: page;
+                }
+
+                .job {
+                    break-inside: avoid;
+                    page-break-inside: avoid;
+                }
+
+                .job-header {
+                    break-after: avoid;
+                }
+
+                .job-desc {
+                    break-before: avoid;
                 }
             }
 
