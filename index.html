@@ -44,12 +44,12 @@
             @media (prefers-color-scheme: dark) {
                 :root {
                     --body-bg: #121212;
-                    --primary: #ecf0f1; /* Bright White/Gray */
-                    --secondary: #bdc3c7; /* Lighter Gray */
-                    --accent: #5dade2; /* Brighter Blue for contrast */
-                    --text: #e0e0e0; /* Off-white text */
-                    --light-bg: #1e272e; /* Dark Gray for Skill Boxes */
-                    --border-color: #333333; /* Dark separators */
+                    --primary: #f5f7fa; /* High-contrast heading */
+                    --secondary: #cfd6dd; /* Subtitles/labels */
+                    --accent: #7db7ff; /* Links/Company Names */
+                    --text: #e6e6e6; /* Body Text */
+                    --light-bg: #1e272e; /* Skill Boxes */
+                    --border-color: #3b3b3b; /* Separators */
 
                     /* Highlight Box Colors (Dark) */
                     --box-bg: #1a2634;
@@ -339,18 +339,72 @@
                     color: #000;
                     -webkit-print-color-adjust: exact;
                     print-color-adjust: exact;
+                    font-size: 0.95em;
+                    line-height: 1.45;
+                }
+                header {
+                    margin-bottom: 24px;
+                    padding-bottom: 12px;
+                    border-bottom-width: 1px;
+                }
+                h1 {
+                    font-size: 2.1em;
+                }
+                .subtitle {
+                    font-size: 1em;
+                }
+                .contact-info {
+                    font-size: 0.85em;
+                }
+                section {
+                    margin-bottom: 20px;
+                    break-before: auto;
+                    break-after: auto;
+                    page-break-before: auto;
+                    page-break-after: auto;
+                }
+                h2 {
+                    margin-bottom: 12px;
+                    padding-bottom: 6px;
+                    font-size: 0.95em;
                 }
                 .no-print {
-                    display: none;
+                    display: none !important;
+                }
+                .btn-print {
+                    display: none !important;
                 }
                 a {
                     text-decoration: none;
                     color: #000;
                 }
-                .skill-item i,
-                .skill-item img,
+                .skills-container {
+                    gap: 8px;
+                }
+                .skill-category-label {
+                    font-size: 0.75em;
+                    margin-bottom: 3px;
+                }
+                .skills-grid {
+                    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+                    gap: 6px;
+                    margin-bottom: 8px;
+                }
+                .skill-item {
+                    padding: 5px;
+                    font-size: 0.74em;
+                    gap: 4px;
+                    border-width: 1px;
+                }
+                .skill-item i {
+                    font-size: 1.2em;
+                }
+                .skill-item img {
+                    width: 16px;
+                    height: 16px;
+                }
                 .cert-icon {
-                    display: none !important;
+                    font-size: 2em;
                 }
                 .skill-item,
                 .cert-box {
