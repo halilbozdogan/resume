@@ -1,0 +1,889 @@
+<!doctype html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Halil Bozdoğan — Kıdemli Yazılım / DevOps Mühendisi."
+        />
+        <meta name="color-scheme" content="light dark" />
+        <title>Halil Bozdoğan - Özgeçmiş</title>
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+        <link rel="preconnect" href="https://cdn.simpleicons.org" crossorigin />
+        <link
+            rel="preconnect"
+            href="https://raw.githubusercontent.com"
+            crossorigin
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+        />
+        <style>
+            /* --- CSS VARIABLES (Light Mode Default) --- */
+            :root {
+                --body-bg: #ffffff;
+                --primary: #2c3e50; /* Başlıklar */
+                --secondary: #34495e; /* Alt Başlıklar */
+                --accent: #2980b9; /* Bağlantılar/Şirket İsimleri */
+                --text: #333333; /* Ana Metin */
+                --light-bg: #f8f9fa; /* Yetenek Kutuları */
+                --border-color: #eeeeee; /* Ayırıcılar */
+
+                /* Highlight Box Colors */
+                --box-bg: #f0f7fb;
+                --box-border: #e1e8ed;
+
+                /* Cert Box Colors */
+                --cert-bg: #f0f7fb;
+                --cert-border: #e1e8ed;
+            }
+
+            /* --- DARK MODE OVERRIDES --- */
+            @media (prefers-color-scheme: dark) {
+                :root {
+                    --body-bg: #121212;
+                    --primary: #f5f7fa; /* Yüksek kontrast başlık */
+                    --secondary: #cfd6dd; /* Alt başlıklar/etiketler */
+                    --accent: #7db7ff; /* Bağlantılar/Şirket İsimleri */
+                    --text: #e6e6e6; /* Ana Metin */
+                    --light-bg: #1e272e; /* Yetenek Kutuları */
+                    --border-color: #3b3b3b; /* Ayırıcılar */
+
+                    /* Highlight Box Colors (Dark) */
+                    --box-bg: #1a2634;
+                    --box-border: #2c3e50;
+
+                    /* Cert Box Colors (Dark) */
+                    --cert-bg: #1a2634;
+                    --cert-border: #2c3e50;
+                }
+                /* Slight adjustment for KEDA/TeamCity icons if they have black text */
+                .skill-item img {
+                    filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.2));
+                }
+            }
+
+            body {
+                font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                line-height: 1.6;
+                color: var(--text);
+                background-color: var(--body-bg);
+                max-width: 950px;
+                margin: 0 auto;
+                padding: 40px 20px;
+                transition:
+                    background-color 0.3s ease,
+                    color 0.3s ease;
+            }
+
+            a {
+                color: var(--accent);
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            a:focus-visible,
+            button:focus-visible {
+                outline: 3px solid var(--accent);
+                outline-offset: 3px;
+                border-radius: 6px;
+            }
+
+            .skip-link {
+                position: absolute;
+                left: -9999px;
+                top: 10px;
+                background: var(--body-bg);
+                color: var(--primary);
+                border: 1px solid var(--border-color);
+                padding: 8px 10px;
+                border-radius: 6px;
+                z-index: 999;
+            }
+            .skip-link:focus {
+                left: 10px;
+            }
+
+            /* Header */
+            header {
+                text-align: center;
+                margin-bottom: 40px;
+                border-bottom: 2px solid var(--border-color);
+                padding-bottom: 20px;
+            }
+            h1 {
+                margin: 0;
+                color: var(--primary);
+                font-size: 2.5em;
+            }
+            .subtitle {
+                font-size: 1.2em;
+                color: var(--secondary);
+                margin-top: 5px;
+                font-weight: 500;
+            }
+            .contact-info {
+                margin-top: 15px;
+                font-size: 0.95em;
+                font-style: normal;
+            }
+            .contact-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 8px 14px;
+            }
+            .contact-list li {
+                display: inline-flex;
+                align-items: baseline;
+            }
+
+            /* Sections */
+            section {
+                margin-bottom: 35px;
+            }
+            h2 {
+                color: var(--primary);
+                border-bottom: 1px solid var(--border-color);
+                padding-bottom: 8px;
+                margin-bottom: 20px;
+                text-transform: uppercase;
+                font-size: 1.1em;
+                letter-spacing: 1px;
+            }
+
+            /* Skills Grid with Logos */
+            .skills-container {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+            .skill-category-label {
+                font-size: 0.9em;
+                color: var(--secondary);
+                font-weight: 700;
+                margin-bottom: 5px;
+                text-transform: uppercase;
+                letter-spacing: 0.5px;
+            }
+            .skills-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+                gap: 15px;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .skill-item {
+                background: var(--light-bg);
+                padding: 12px;
+                border-radius: 8px;
+                font-size: 0.85em;
+                font-weight: 600;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                transition:
+                    transform 0.2s ease,
+                    background-color 0.3s ease;
+                border: 1px solid transparent;
+                color: var(--text);
+            }
+            .skill-item:hover {
+                transform: translateY(-2px);
+                border-color: var(--border-color);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            }
+
+            /* Icon Styling */
+            .skill-item i {
+                font-size: 2.2em;
+            }
+            .custom-icon {
+                width: 35px;
+                height: 35px;
+                object-fit: contain;
+            }
+            .colored {
+                color: inherit;
+            }
+
+            /* Certification Box */
+            .cert-box {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                background: var(--cert-bg);
+                border: 1px solid var(--cert-border);
+                padding: 15px 20px;
+                border-radius: 8px;
+                transition: background-color 0.3s ease;
+            }
+            .cert-icon {
+                font-size: 2.5em;
+                color: #326ce5;
+            } /* Kubernetes Blue */
+            .cert-details {
+                display: flex;
+                flex-direction: column;
+            }
+            .cert-title {
+                font-weight: bold;
+                font-size: 1.1em;
+                color: var(--primary);
+            }
+            .cert-issuer {
+                font-size: 0.9em;
+                color: var(--secondary);
+            }
+
+            /* Experience */
+            .job-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                margin-bottom: 2px;
+            }
+            .job-title {
+                font-weight: bold;
+                font-size: 1.1em;
+                color: var(--primary);
+            }
+            .company {
+                color: var(--accent);
+                font-weight: 600;
+            }
+            .company-desc {
+                display: block;
+                font-size: 0.9em;
+                color: var(--secondary);
+                font-style: italic;
+                margin-bottom: 8px;
+            }
+            .date {
+                color: var(--secondary);
+                font-size: 0.9em;
+            }
+            .job-desc {
+                margin-top: 5px;
+            }
+            .job {
+                margin-bottom: 28px;
+            }
+            .job:last-child {
+                margin-bottom: 0;
+            }
+            h3.job-title {
+                margin: 0;
+            }
+            ul {
+                margin-top: 8px;
+                padding-left: 20px;
+            }
+            li {
+                margin-bottom: 6px;
+            }
+
+            /* Highlight Box for Main Projects */
+            .highlight-box {
+                background: var(--box-bg);
+                border-left: 4px solid var(--accent);
+                padding: 15px;
+                margin: 15px 0 25px 0;
+                border-radius: 0 4px 4px 0;
+                transition: background-color 0.3s ease;
+            }
+            .highlight-title {
+                font-weight: bold;
+                display: block;
+                margin-bottom: 5px;
+                color: var(--secondary);
+            }
+
+            /* Footer/Print Button */
+            .no-print {
+                text-align: center;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            .btn-print {
+                background: var(--accent);
+                color: white;
+                border: none;
+                padding: 12px 25px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 1em;
+                font-weight: bold;
+            }
+            .btn-print:hover {
+                opacity: 0.9;
+            }
+
+            /* --- PRINT STYLES (Always White) --- */
+            @page {
+                margin: 14mm;
+            }
+            @media print {
+                body {
+                    max-width: 100%;
+                    padding: 0;
+                    background-color: #fff;
+                    color: #000;
+                    -webkit-print-color-adjust: exact;
+                    print-color-adjust: exact;
+                    font-size: 1em;
+                    line-height: 1.5;
+                }
+                header {
+                    margin-bottom: 24px;
+                    padding-bottom: 12px;
+                    border-bottom-width: 1px;
+                }
+                h1 {
+                    font-size: 2.1em;
+                }
+                .subtitle {
+                    font-size: 1em;
+                }
+                .contact-info {
+                    font-size: 0.85em;
+                }
+                section {
+                    margin-bottom: 24px;
+                    break-before: auto;
+                    break-after: auto;
+                    page-break-before: auto;
+                    page-break-after: auto;
+                }
+                h2 {
+                    margin-bottom: 12px;
+                    padding-bottom: 6px;
+                    font-size: 0.95em;
+                    break-after: avoid;
+                }
+                .no-print {
+                    display: none !important;
+                }
+                .btn-print {
+                    display: none !important;
+                }
+                a {
+                    text-decoration: none;
+                    color: #000;
+                }
+                .skills-container {
+                    gap: 8px;
+                }
+                .skill-category-label {
+                    font-size: 0.75em;
+                    margin-bottom: 3px;
+                }
+                .skills-grid {
+                    grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+                    gap: 6px;
+                    margin-bottom: 8px;
+                }
+                .skill-item {
+                    padding: 5px;
+                    font-size: 0.74em;
+                    gap: 4px;
+                    border-width: 1px;
+                }
+                .skill-item i {
+                    font-size: 1.2em;
+                }
+                .skill-item img {
+                    width: 16px;
+                    height: 16px;
+                }
+                .cert-icon {
+                    font-size: 2em;
+                }
+                .skill-item,
+                .cert-box {
+                    border: 1px solid #eee;
+                    break-inside: avoid;
+                    background: #fff;
+                    color: #000;
+                }
+                .highlight-box {
+                    background: #fff !important;
+                    border: 1px solid #ccc;
+                    border-left: 4px solid #333 !important;
+                }
+
+                /* Force Headers Black */
+                h1,
+                h2,
+                .job-title,
+                .cert-title {
+                    color: #000;
+                }
+                .subtitle,
+                .company-desc,
+                .cert-issuer,
+                .date {
+                    color: #444;
+                }
+                header,
+                h2 {
+                    border-bottom-color: #ccc;
+                }
+
+                #summary,
+                #skills,
+                #certifications {
+                    break-inside: avoid;
+                }
+
+                #experience {
+                    break-before: page;
+                }
+
+                .job {
+                    break-inside: avoid;
+                    page-break-inside: avoid;
+                }
+
+                .job-header {
+                    break-after: avoid;
+                }
+
+                .job-desc {
+                    break-before: avoid;
+                }
+            }
+
+            /* Mobile Tweak */
+            @media (max-width: 600px) {
+                .skills-grid {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+                .job-header {
+                    flex-direction: column;
+                }
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                * {
+                    transition: none !important;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <a class="skip-link" href="#content">İçeriğe atla</a>
+        <header>
+            <h1>Halil Bozdoğan</h1>
+            <div class="subtitle">Kıdemli Yazılım / DevOps Mühendisi</div>
+            <address class="contact-info">
+                <ul class="contact-list" aria-label="İletişim">
+                    <li>Ankara, Türkiye</li>
+                    <li>
+                        <a href="mailto:halilbozdogan@gmail.com"
+                            >halilbozdogan@gmail.com</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://www.halilbozdogan.com"
+                            >halilbozdogan.com</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://github.com/halilbozdogan"
+                            >github.com/halilbozdogan</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/halilbozdogan/"
+                            >linkedin.com/in/halilbozdogan</a
+                        >
+                    </li>
+                </ul>
+            </address>
+        </header>
+
+        <main id="content">
+            <section id="summary">
+                <h2>Özet</h2>
+                <p>
+                    15 yılı aşkın tecrübeye sahip bir Kıdemli DevOps Mühendisi olarak, .NET’ten bulut-tabanlı altyapıya geçişi yönlendiriyorum. Eski sistemleri modernize etmek, yüksek trafikli Kubernetes Clusterları yönetmek ve karmaşık CI/CD boru hatlarını otomatikleştirmek konularında uzmanım. Geliştirme ile operasyonlar arasındaki köprüyü kurarak sistem güvenilirliğini, performansını ve geliştirici verimliliğini artırmayı hedefliyorum.
+                </p>
+            </section>
+
+            <section id="skills">
+                <h2>Teknik Yetenekler</h2>
+
+                <div class="skills-container">
+                    <div class="skill-category-label">
+                        Geliştirme ve Temel Bulut Becerileri
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i
+                                class="devicon-csharp-plain colored"
+                                aria-hidden="true"
+                            ></i>
+                            C# / .NET
+                        </div>
+                        <div class="skill-item">
+                            <i
+                                class="devicon-kubernetes-plain colored"
+                                aria-hidden="true"
+                            ></i>
+                            Kubernetes
+                        </div>
+                        <div class="skill-item">
+                            <i
+                                class="devicon-docker-plain colored"
+                                aria-hidden="true"
+                            ></i>
+                            Docker
+                        </div>
+                        <div class="skill-item">
+                            <i
+                                class="devicon-azure-plain colored"
+                                aria-hidden="true"
+                            ></i>
+                            Azure
+                        </div>
+                        <div class="skill-item">
+                            <img
+                                src="https://raw.githubusercontent.com/kedacore/keda/refs/heads/main/images/logos/keda-icon-colour.svg"
+                                class="custom-icon"
+                                alt=""
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            KEDA
+                        </div>
+                        <div class="skill-item">
+                            <i
+                                class="devicon-nginx-plain colored"
+                                aria-hidden="true"
+                            ></i>
+                            NGINX
+                        </div>
+                    </div>
+
+                    <div class="skill-category-label">
+                        CI/CD ve Orkestrasyon
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <img
+                                src="https://cdn.simpleicons.org/octopusdeploy/2F93E0"
+                                class="custom-icon"
+                                alt=""
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            Octopus
+                        </div>
+                        <div class="skill-item">
+                            <img
+                                src="https://cdn.simpleicons.org/teamcity/2c3e50"
+                                class="custom-icon"
+                                alt=""
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            TeamCity
+                        </div>
+                        <div class="skill-item">
+                            <i
+                                class="devicon-gitlab-plain colored"
+                                aria-hidden="true"
+                            ></i>
+                            GitLab CI
+                        </div>
+                        <div class="skill-item">
+                            <i
+                                class="devicon-azuredevops-plain colored"
+                                aria-hidden="true"
+                            ></i>
+                            Azure DevOps
+                        </div>
+                    </div>
+
+                    <div class="skill-category-label">Veri ve Gözlemlenebilirlik</div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i
+                                class="devicon-rabbitmq-plain colored"
+                                aria-hidden="true"
+                            ></i>
+                            RabbitMQ
+                        </div>
+                        <div class="skill-item">
+                            <i
+                                class="devicon-couchbase-plain colored"
+                                aria-hidden="true"
+                            ></i>
+                            Couchbase
+                        </div>
+                        <div class="skill-item">
+                            <i
+                                class="devicon-sonarqube-plain colored"
+                                aria-hidden="true"
+                            ></i>
+                            SonarQube
+                        </div>
+                        <div class="skill-item">
+                            <i
+                                class="devicon-microsoftsqlserver-plain colored"
+                                aria-hidden="true"
+                            ></i>
+                            SQL Server
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-redis-plain colored" aria-hidden="true"></i>
+                            Redis
+                        </div>
+                        <div class="skill-item">
+                            <img
+                                src="https://cdn.simpleicons.org/newrelic/2c3e50"
+                                class="custom-icon"
+                                alt=""
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            New Relic
+                        </div>
+                        <div class="skill-item">
+                            <img
+                                src="https://cdn.simpleicons.org/sentry/2c3e50"
+                                class="custom-icon"
+                                alt=""
+                                aria-hidden="true"
+                                loading="lazy"
+                                decoding="async"
+                            />
+                            Sentry
+                        </div>
+                        <div class="skill-item">
+                            <i
+                                class="devicon-prometheus-original colored"
+                                aria-hidden="true"
+                            ></i>
+                            Prometheus
+                        </div>
+                        <div class="skill-item">
+                            <i
+                                class="devicon-elasticsearch-plain colored"
+                                aria-hidden="true"
+                            ></i>
+                            ELK Stack
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="certifications">
+                <h2>Sertifikalar</h2>
+                <div class="cert-box">
+                    <i class="devicon-kubernetes-plain cert-icon" aria-hidden="true"></i>
+                    <div class="cert-details">
+                        <span class="cert-title">Sertifikalı Kubernetes Yöneticisi (CKA)</span>
+                        <span class="cert-issuer">Cloud Native Computing Foundation (CNCF) — Verildiği Kasım 2024</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience">
+                <h2>İş Deneyimi</h2>
+
+                <article class="job">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">Kıdemli DevOps Mühendisi — <span class="company">Nesine</span></h3>
+                        </div>
+                        <span class="date"><time datetime="2023-05">Mayıs 2023</time> – <time datetime="9999-12">Şimdiki</time></span>
+                    </div>
+                    <span class="company-desc">Türkiye'nin Önde Gelen Yasal Çevrimiçi Bahis ve Oyun Platformu</span>
+
+                    <div class="highlight-box">
+                        <span class="highlight-title">Ana Zorluk: Görev-Kritik Ölçeklendirme</span>
+                        Türkiye'nin en büyük bahis platformu için 7x24 kesintisiz altyapıyı yönettim; 99.99% erişilebilirlik ve yüksek trafikli canlı spor etkinlikleri sırasında minimum gecikme ile gerçek zamanlı veri tutarlılığını sağladım.
+                    </div>
+
+                    <div class="job-desc">
+                        <ul>
+                            <li>
+                                <strong>İleri Düzey Otomatik Ölçeklendirme:</strong>
+                                <strong>KEDA</strong> ile olay güdümlü otomatik ölçeklendirme uygulandı; RabbitMQ kuyruğu derinliği ve özel <strong>ASP.NET Core</strong> metrikleri temelinde dinamik pod ölçeklendirmesi konfigüre edildi.
+                            </li>
+                            <li>
+                                <strong>Kubernetes Göçü:</strong> VM tabanlı dağıtımlardan Kubernetes'e tam geçişi yönettim; Docker Buildx (Bake), Octopus Deploy ve TeamCity kullanıldı.
+                            </li>
+                            <li>
+                                <strong>Yüksek Ölçekli Operasyonlar:</strong> Yüksek eşzamanlı zamanlarda milyonlarca işlemi kesintisiz olarak sürdürmek için sağlam altyapıyı yönettim.
+                            </li>
+                            <li>
+                                <strong>CI/CD Mimarisi:</strong> İzole edilen derleme yürütümleri için Octopus Kubernetes Ajanları ve GitLab Kubernetes Runners uygulandı.
+                            </li>
+                            <li>
+                                <strong>Gözlemlenebilirlik:</strong> Gerçek zamanlı sistem görünürlüğü için New Relic panelleri geliştirdim ve frontend izleme için kendi barındırılan Sentry kurulumunu devreye aldım.
+                            </li>
+                            <li>
+                                <strong>Araçlar:</strong> Octopus/TeamCity pipeline'larını izlemek için Blazor tabanlı dahili bir uygulama geliştirdim ve merkezi günlükler ve önbellekleme için özel NGINX ters proxy'leri konuşlandırdım.
+                            </li>
+                            <li>
+                                <strong>Kod Kalitesi:</strong> SonarQube kurulumlarını devreye aldım ve bunları CI/CD boru hatlarına entegre ederek kalite kapıları ve statik analiz otomatik olarak uygulanmasını sağladım.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="job">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">Kıdemli Yazılım Mühendisi — <span class="company">Enocta</span></h3>
+                        </div>
+                        <span class="date"><time datetime="2022-07">Tem 2022</time> – <time datetime="2023-04">Nis 2023</time></span>
+                    </div>
+                    <span class="company-desc">Türkiye'nin LMS & Dijital Öğrenme Çözümlerinde Sektör Lideri</span>
+                    <div class="job-desc">
+                        <ul>
+                            <li>Çekirdek Web API hizmetlerindeki performans darboğazlarını tanımlayıp giderdim.</li>
+                            <li>Uluslararası kullanıcılar için çoklu zaman dilimini destekleyen operasyonel özellikler tasarladım.</li>
+                            <li>TFS'den Git'e geçiş ve Azure DevOps boru hatlarını uyguladım.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="job">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">Kıdemli Yazılım Mühendisi — <span class="company">Tiga Bilgi Teknolojileri</span></h3>
+                        </div>
+                        <span class="date"><time datetime="2015-12">Ara 2015</time> – <time datetime="2022-07">Tem 2022</time></span>
+                    </div>
+                    <span class="company-desc">Küresel Sağlık Teknolojileri Sağlayıcısı, Ulusal Ölçekli Dijital Sağlık Çözümleri</span>
+
+                    <div class="highlight-box">
+                        <span class="highlight-title">Ana Proje: Ulusal Sağlık Sistemi (e-Nabız)</span>
+                        Türkiye'nin Kişisel Sağlık Kayıt Sistemi'nin altyapısını tasarladım; 6 milyonun üzerinde hastaya hizmet verdi. Couchbase kümlerini (>20TB veri) yönettim ve günlük 1M'in üzerinde talebi ele aldım.
+                    </div>
+
+                    <div class="job-desc">
+                        <ul>
+                            <li><strong>Modernleşme:</strong> Eski Windows Servis uygulamalarını Kubernetes'e taşıdım (MetalLB, NGINX-Ingress, Harbor).</li>
+                            <li><strong>Kod Kalitesi Güvencesi:</strong> SonarQube sunucuları kurup sürdürdüm ve kamu sektörü projelerinde kod kalitesi ve güvenlik açıklarını sürekli denetledim.</li>
+                            <li><strong>Sistem Entegrasyonu:</strong> Tanısal görüntüleme ve dış sistemlerle güvenilir entegrasyonlar tasarladım.</li>
+                            <li><strong>Yazılım Evrimi:</strong> .NET Core uygulamalarını 2.x'ten LTS sürümlerine güncelledim ve karmaşık kod tabanlarını yeniden yapılandırdım.</li>
+                            <li><strong>DevOps Uygulamaları:</strong> TFS ve şirket içi Kubernetes kümelerini kullanarak CI/CD iş akışlarını kurdum.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="job">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">Kıdemli Yazılım Mühendisi — <span class="company">CLF IT Consulting</span></h3>
+                        </div>
+                        <span class="date"><time datetime="2014-04">Nis 2014</time> – <time datetime="2015-10">Eki 2015</time></span>
+                    </div>
+                    <span class="company-desc">Savunma ve Güvenlik Teknolojileri Danışmanlığı</span>
+                    <div class="job-desc">
+                        <ul>
+                            <li>Özel mesajlaşma entegrasyonları için yüksek performanslı bloklanan olmayan bir web sunucusu geliştirdim.</li>
+                            <li>Güçlü güvenlik gerektiren askeri projeler için dayanıklı sistemler üzerinde çalıştım (Güvenlik Açığı elde edildi).</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="job">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">Yazılım Mühendisi — <span class="company">Anadolu Ajansı</span></h3>
+                        </div>
+                        <span class="date"><time datetime="2013-12">Ara 2013</time> – <time datetime="2014-02">Şub 2014</time></span>
+                    </div>
+                    <span class="company-desc">Türkiye'nin Global Haber Ajansı ve Bilgi Ağı</span>
+                    <div class="job-desc">
+                        <ul>
+                            <li>Kurumsal haber altyapısına üçüncü taraf sistemlerini entegre etmek için Windows/Web hizmetleri tasarlandı.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="job">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">Uygulama Geliştirme Danışmanı — <span class="company">Innova</span></h3>
+                        </div>
+                        <span class="date"><time datetime="2008-09">Eyl 2008</time> – <time datetime="2013-12">Aral 2013</time></span>
+                    </div>
+                    <span class="company-desc">Önde Gelen Sistem Entegratörü & Yazılım Çözümleri Sağlayıcısı (Türk Telekom Yan Şirketi)</span>
+                    <div class="job-desc">
+                        <ul>
+                            <li>Kurumsal uygulamalar için gereksinim analizi ve sistem tasarımı yaptım.</li>
+                            <li>Eski kütüphaneleri ve performansı iyileştirmek için ortak çerçeveler geliştirdim.</li>
+                            <li>Stajyerler ve genç geliştiricilere kodlama standartları ve en iyi uygulamalar konusunda mentorluk yaptım.</li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="job">
+                    <div class="job-header">
+                        <div>
+                            <h3 class="job-title">Sistem Desteği Şefi — <span class="company">Demir Export A.S.</span></h3>
+                        </div>
+                        <span class="date"><time datetime="2007-10">Eki 2007</time> – <time datetime="2008-08">Ağu 2008</time></span>
+                    </div>
+                    <span class="company-desc">Ana Madencilik ve Sanayi Şirketi (Koç Holding)</span>
+                    <div class="job-desc">
+                        <ul>
+                            <li>Windows Server ve Active Directory altyapısını yönettim.</li>
+                            <li>SharePoint tabanlı iş birliği ortamlarını dağıtıp özelleştirdim.</li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+
+            <section id="projects">
+                <h2>Seçilen Projeler</h2>
+                <ul>
+                    <li>
+                        <strong>Türkiye Burs Sistemi (2016):</strong>
+                        Azure Bulut mimarisi kuruldu ve aylık 150.000 başvuruya hizmet veriyor.
+                    </li>
+                    <li>
+                        <strong>Gençlik ve Spor Bakanlığı (2019):</strong>
+                        Bakanlık operasyonlarını dijitalleştirdi ve eski kod performansı optimize edildi.
+                    </li>
+                    <li>
+                        <strong>Merkez Bankası Entegrasyonu (2014):</strong> Finansal veriler için Reuters RS232 seri mesajları finans portaline entegre edildi.
+                    </li>
+                </ul>
+            </section>
+
+            <section id="education">
+                <h2>Eğitim</h2>
+                <p>
+                    <strong>Hacettepe Üniversitesi</strong> — Bilgisayar Eğitimi ve Öğretim Teknolojileri<br />
+                    <span class="date"><time datetime="2001-12">Aralık 2001</time> – <time datetime="2005-12">Aralık 2005</time> | GPA: 3.13 / 4.0</span>
+                </p>
+            </section>
+        </main>
+
+        <div class="no-print">
+            <button class="btn-print" type="button" onclick="window.print()">
+                İndir / PDF olarak Yazdır
+            </button>
+        </div>
+    </body>
+</html>
